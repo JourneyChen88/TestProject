@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcDemo", "MvcDemo\MvcDemo.csproj", "{71C567F7-A9A7-4E4A-9068-80A3D4D1D009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortTest", "ConsoleApp1\SortTest.csproj", "{472797B0-9BF9-443A-B43A-DF398CDACDCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71C567F7-A9A7-4E4A-9068-80A3D4D1D009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71C567F7-A9A7-4E4A-9068-80A3D4D1D009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71C567F7-A9A7-4E4A-9068-80A3D4D1D009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71C567F7-A9A7-4E4A-9068-80A3D4D1D009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{472797B0-9BF9-443A-B43A-DF398CDACDCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{472797B0-9BF9-443A-B43A-DF398CDACDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{472797B0-9BF9-443A-B43A-DF398CDACDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{472797B0-9BF9-443A-B43A-DF398CDACDCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96F4F2BC-6B96-43FA-908E-3F6764CE853A}
+	EndGlobalSection
+EndGlobal
