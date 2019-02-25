@@ -1,0 +1,262 @@
+{
+   "checksum": "fff6613cb4bb6580b9ba52c85537e197",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13191563544525683",
+            "id": "40",
+            "meta_info": {
+               "last_visited_desktop": "13191585298926100"
+            },
+            "name": "SQL 增加列、修改列、删除列 - ieayoio - 博客园",
+            "type": "url",
+            "url": "https://www.cnblogs.com/ieayoio/p/5293124.html"
+         }, {
+            "date_added": "13178875690105983",
+            "id": "5",
+            "meta_info": {
+               "last_visited_desktop": "13195288093178104"
+            },
+            "name": "SqlSugar4",
+            "type": "url",
+            "url": "http://www.codeisbug.com/Doc/8"
+         }, {
+            "date_added": "13178875741232001",
+            "id": "6",
+            "meta_info": {
+               "last_visited_desktop": "13194950590396669"
+            },
+            "name": "AutoEntity",
+            "type": "url",
+            "url": "https://github.com/q7164518/Autoentity"
+         }, {
+            "date_added": "13178876290250104",
+            "id": "7",
+            "meta_info": {
+               "last_visited_desktop": "13192098052114005"
+            },
+            "name": "FluentData",
+            "type": "url",
+            "url": "https://www.cnblogs.com/_popc/archive/2012/12/26/2834726.html"
+         }, {
+            "date_added": "13178881031841175",
+            "id": "8",
+            "meta_info": {
+               "last_visited_desktop": "13195550762737524"
+            },
+            "name": "百度",
+            "type": "url",
+            "url": "https://www.baidu.com/"
+         }, {
+            "date_added": "13179461348019373",
+            "id": "10",
+            "meta_info": {
+               "last_visited_desktop": "13195276774694295"
+            },
+            "name": "新闻哥",
+            "type": "url",
+            "url": "http://www.52rkl.cn/xinwenge/"
+         }, {
+            "date_added": "13180068727379793",
+            "id": "12",
+            "meta_info": {
+               "last_visited_desktop": "13180068727381924"
+            },
+            "name": "创建用户只能看指定的视图",
+            "type": "url",
+            "url": "https://blog.csdn.net/escapeplan/article/details/77164664"
+         }, {
+            "date_added": "13180154724674422",
+            "id": "14",
+            "meta_info": {
+               "last_visited_desktop": "13191400127455802"
+            },
+            "name": "GIT",
+            "type": "url",
+            "url": "https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375840038939c291467cc7c747b1810aab2fb8863508000"
+         }, {
+            "date_added": "13181304611131317",
+            "id": "16",
+            "meta_info": {
+               "last_visited_desktop": "13191062774849741"
+            },
+            "name": "EMR · GitLab",
+            "type": "url",
+            "url": "http://192.168.1.204/Desktop/EMR"
+         }, {
+            "date_added": "13181388307287568",
+            "id": "18",
+            "meta_info": {
+               "last_visited_desktop": "13194950599874422"
+            },
+            "name": "[C#]使用RabbitMQ模拟抽奖系统的例子 - xiao99 - 博客园",
+            "type": "url",
+            "url": "https://www.cnblogs.com/xiao99/p/6604355.html"
+         }, {
+            "date_added": "13181388328783006",
+            "id": "19",
+            "meta_info": {
+               "last_visited_desktop": "13192097076358887"
+            },
+            "name": "windows配置Erlang环境",
+            "type": "url",
+            "url": "http://www.cnblogs.com/longlongogo/p/6479424.html"
+         }, {
+            "date_added": "13181909678427552",
+            "id": "21",
+            "meta_info": {
+               "last_visited_desktop": "13191064657291007"
+            },
+            "name": "SQL - 根据关联，用一个表的值修改另一个表对应字段的值 - David.Yun - 博客园",
+            "type": "url",
+            "url": "https://www.cnblogs.com/LYshuqian/archive/2013/02/20/2919106.html"
+         }, {
+            "date_added": "13182335077574653",
+            "id": "23",
+            "meta_info": {
+               "last_visited_desktop": "13182407492454427"
+            },
+            "name": "[实践]FastReport.NET使用示例 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/allen3010/article/details/7008546"
+         }, {
+            "date_added": "13182502259467588",
+            "id": "25",
+            "meta_info": {
+               "last_visited_desktop": "13189857416866675"
+            },
+            "name": "上海市五险一金及税后工资计算器",
+            "type": "url",
+            "url": "http://salarycalculator.sinaapp.com/"
+         }, {
+            "date_added": "13182679611310605",
+            "id": "27",
+            "meta_info": {
+               "last_visited_desktop": "13192097218859915"
+            },
+            "name": "C#使用RabbitMQ",
+            "type": "url",
+            "url": "https://www.cnblogs.com/longlongogo/p/6489574.html"
+         }, {
+            "date_added": "13186215945275619",
+            "id": "29",
+            "meta_info": {
+               "last_visited_desktop": "13191066710717835"
+            },
+            "name": "基于.NET平台常用的框架整理 - Blink_Star - 博客园",
+            "type": "url",
+            "url": "https://www.cnblogs.com/Blink_Star/articles/5322532.html"
+         }, {
+            "date_added": "13188633443565791",
+            "id": "31",
+            "meta_info": {
+               "last_visited_desktop": "13195549649932540"
+            },
+            "name": "GitHub",
+            "type": "url",
+            "url": "https://github.com/JourneyChen88"
+         }, {
+            "date_added": "13188970361308478",
+            "id": "33",
+            "meta_info": {
+               "last_visited_desktop": "13188970361310329"
+            },
+            "name": "Sql Server 增加字段、修改字段、修改类型、修改默认值 - 太潮了就要晒 - 博客园",
+            "type": "url",
+            "url": "https://www.cnblogs.com/pangpanghuan/p/6432331.html"
+         }, {
+            "date_added": "13189587009890841",
+            "id": "35",
+            "meta_info": {
+               "last_visited_desktop": "13194344880158511"
+            },
+            "name": "Beyond Compare 30天",
+            "type": "url",
+            "url": "https://jingyan.baidu.com/article/af9f5a2d42b19143140a459b.html"
+         }, {
+            "children": [  ],
+            "date_added": "13190541973111866",
+            "date_modified": "13190541973111867",
+            "id": "38",
+            "name": "新建文件夹22",
+            "type": "folder"
+         }, {
+            "date_added": "13191669813875162",
+            "id": "42",
+            "meta_info": {
+               "last_visited_desktop": "13192253621720507"
+            },
+            "name": "四十部色情禁书(在线阅读txt，全集，全本下载)——海岸线文学网专题",
+            "type": "url",
+            "url": "https://www.haxshu.com/ssjs.php"
+         }, {
+            "date_added": "13192011348156769",
+            "id": "44",
+            "meta_info": {
+               "last_visited_desktop": "13195288427254865"
+            },
+            "name": "腾讯体育_腾讯网",
+            "type": "url",
+            "url": "https://sports.qq.com/"
+         }, {
+            "date_added": "13192253686463213",
+            "id": "46",
+            "meta_info": {
+               "last_visited_desktop": "13192253686464162"
+            },
+            "name": "海岸线文学网将尽力保证以下作者的书籍完整和完本(在线阅读txt，全集，全本下载)——海岸线文学网专题",
+            "type": "url",
+            "url": "https://www.haxshu.com/zuozhe.php"
+         }, {
+            "date_added": "13195115614882551",
+            "id": "48",
+            "meta_info": {
+               "last_visited_desktop": "13195115614882779"
+            },
+            "name": "基于DDD的现代ASP.NET开发框架--ABP系列文章总目录 - 阳光铭睿 - 博客园",
+            "type": "url",
+            "url": "https://www.cnblogs.com/mienreal/p/4528470.html"
+         }, {
+            "date_added": "13195287000551550",
+            "id": "50",
+            "meta_info": {
+               "last_visited_desktop": "13195287000552369"
+            },
+            "name": "数据库分区、分表、分库，读写分离 - liangz的专栏 - CSDN博客",
+            "type": "url",
+            "url": "https://blog.csdn.net/liangz/article/details/79352870"
+         }, {
+            "date_added": "13195550757539741",
+            "id": "52",
+            "meta_info": {
+               "last_visited_desktop": "13195550757540080"
+            },
+            "name": "十大编程算法助程序员走上高手之路 | 菜鸟教程",
+            "type": "url",
+            "url": "http://www.runoob.com/w3cnote/the-friendship-algorithm-the-big-bang-theory.html"
+         } ],
+         "date_added": "13178875270288286",
+         "date_modified": "13195550757539741",
+         "id": "1",
+         "name": "书签栏",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13178875270288306",
+         "date_modified": "0",
+         "id": "2",
+         "name": "其他书签",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13178875270288307",
+         "date_modified": "0",
+         "id": "3",
+         "name": "移动设备书签",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

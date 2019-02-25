@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sort", "Sort\Sort.csproj", "{1A883392-A323-419D-8EAC-FFC58174A1B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatchWebInfo", "CatchWebInfo\CatchWebInfo.csproj", "{11352A26-AD61-48BA-94A2-F455EB9FC8BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1A883392-A323-419D-8EAC-FFC58174A1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A883392-A323-419D-8EAC-FFC58174A1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A883392-A323-419D-8EAC-FFC58174A1B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11352A26-AD61-48BA-94A2-F455EB9FC8BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11352A26-AD61-48BA-94A2-F455EB9FC8BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11352A26-AD61-48BA-94A2-F455EB9FC8BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11352A26-AD61-48BA-94A2-F455EB9FC8BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
