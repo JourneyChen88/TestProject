@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <DetailRowCont>10</DetailRowCont>
+
+  <FontDesc>
+    <Font Size="7" Name="宋体" FontIndex="0"/>
+    <Font Size="8" Name="宋体" FontIndex="1"/>
+    <Font Size="9" Name="宋体" FontIndex="2"/>
+    <Font Size="10" Name="宋体" FontIndex="3"/>
+    <Font Size="12" Name="宋体" FontIndex="4"/>
+  </FontDesc>
+
+  <OutTextDesc>
+    <OutText Name="ExpenseAccountFlag1" FontIndex="1" Top="122" Left="650" Bold="1" Format ="1" ColumnWidth="2312"/>
+    <OutText Name="JsFlag" FontIndex="0" Top="130" Left="245" DefaultValue="实时结算：★"/>
+    <OutText Name="Jylsh" FontIndex="0" Top="210" Left="245" DefaultValue="交易流水号："/>
+    <OutText Name="No" FontIndex="0" Top="210" Left="595" />
+    <OutText Name="TradeType" FontIndex="0" Top="130" Left="600" />
+    <OutText Name="OriText" FontIndex="0" Top="210" Left="1400" />
+    <OutText Name="OriTradeNo" FontIndex="1" Top="210" Left="1900" />
+    <OutText Name="RealTimeFlag" FontIndex="1" Top="2492" Left="750" />
+    <OutText Name="Operator" FontIndex="1" Top="2492" Left="1850" />
+    <OutText Name="RowLimitTip" FontIndex="3" Top="1270" Left="225" />
+    <OutText Name="DateYear" FontIndex="1" Top="2492" Left="3100" />
+    <OutText Name="DateMonth" FontIndex="1" Top="2492" Left="3340"/>
+    <OutText Name="DateDay" FontIndex="1" Top="2492" Left="3540"/>
+    <OutText Name="BusinessNo" FontIndex="0" Top="280" Left="625" />
+    <OutText Name="OrganizationTypeName" FontIndex="1" Top="275" Left="1950" />
+    <OutText Name="PayerName" FontIndex="1" Top="400" Left="400" />
+    <OutText Name="Sex" FontIndex="1" Top="400" Left="1390" />
+    <OutText Name="InsuranceTypeName" FontIndex="1" Top="400" Left="1830" />
+    <OutText Name="ICNo" FontIndex="1" Top="400" Left="3150" />
+    <OutText Name="AmountCn" FontIndex="1" Top="2370" Left="755" ConvertNumFrom="AmountNum"/>
+    <OutText Name="AmountNum" FontIndex="1" Top="2370" Left="3480" />
+  </OutTextDesc>
+
+  <OutTableDesc>
+    
+    <!--左明细数据-->
+    <OutTable Name="v133_Detail1" FontIndex="1" Left="230" Top="650" LineDisp="0" Distance="4" Type="3">
+      <ColumnWidths>
+        <ColumnWidth>780</ColumnWidth>
+        <ColumnWidth>230</ColumnWidth>
+        <ColumnWidth>260</ColumnWidth>
+        <ColumnWidth>270</ColumnWidth>
+        <ColumnWidth>210</ColumnWidth>
+      </ColumnWidths>
+      <DataLocation RowTo="11" RowFrom="1">
+        <Name Col="1"/>
+        <Price Col="2"/>
+        <Quantity Col="3"/>
+        <Amount Col="4"/>
+        <FeeGrade Col="5"/>
+      </DataLocation>
+    </OutTable>
+
+    <!--右明细数据-->
+    <OutTable Name="v133_Detail2" FontIndex="1" Left="2180" Top="650" LineDisp="0" Distance="4" Type="3">
+      <ColumnWidths>
+        <ColumnWidth>780</ColumnWidth>
+        <ColumnWidth>230</ColumnWidth>
+        <ColumnWidth>260</ColumnWidth>
+        <ColumnWidth>270</ColumnWidth>
+        <ColumnWidth>210</ColumnWidth>
+      </ColumnWidths>
+      <DataLocation RowTo="11" RowFrom="1">
+        <Name Col="1"/>
+        <Price Col="2"/>
+        <Quantity Col="3"/>
+        <Amount Col="4"/>
+        <FeeGrade Col="5"/>
+      </DataLocation>
+    </OutTable>
+
+    <!--医保金额表头-->
+    <OutTable Name="AmountYBTitle" FontIndex="1" Left="230" Top="1770" Align="0" LineDisp="0" Distance="4" Type="1">
+      <ColumnWidths>
+        <ColumnWidth>1220</ColumnWidth>
+        <ColumnWidth>400</ColumnWidth>
+        <ColumnWidth>800</ColumnWidth>
+        <ColumnWidth>400</ColumnWidth>
+        <ColumnWidth>500</ColumnWidth>
+        <ColumnWidth>300</ColumnWidth>
+      </ColumnWidths>
+      <DefaultData>
+        <Data Value=" | | | |自付一：|"/>
+        <Data Value=" | | | |起付金额：|"/>
+        <Data Value="本次医保范围内金额:| | | |超封顶金额：|"/>
+        <Data Value="年度累计医保范围内金额：| | | |自付二：|"/>
+        <Data Value="年度居民基本医疗保险基金门诊累计支付:| | | |自费：|"/>
+      </DefaultData>
+    </OutTable>
+
+    <!--医保金额数据-->
+    <OutTable Name="AmountYB" FontIndex="1" Left="230" Top="1770" Align="4" LineDisp="0" Distance="4" Type="2">
+      <ColumnWidths>
+        <ColumnWidth>1200</ColumnWidth>
+        <ColumnWidth>380</ColumnWidth>
+        <ColumnWidth>820</ColumnWidth>
+        <ColumnWidth>360</ColumnWidth>
+        <ColumnWidth>500</ColumnWidth>
+        <ColumnWidth>345</ColumnWidth>
+      </ColumnWidths>
+      <DataLocation RowCount="6" ZeroDisplay="0.00">
+        <Trade_SelfPay1 Row="1" Col="6"/>
+
+        <Trade_FirstPay Row="2" Col="6"/>
+
+        <Trade_FeeIn Row="3" Col="2"/>
+        <Trade_BeyondBig Row="3" Col="6"/>
+
+        <Treatment_FeeIn Row="4" Col="2"/>
+        <Trade_SelfPay2 Row="4" Col="6"/>
+
+        <Treatment_BigPay Row="5" Col="2"/>
+        <Trade_FeeOut Row="5" Col="6"/>
+
+        <Trade_FundPay Row="6" Col="2"/>
+        <Trade_PersonCountPay Row="6" Col="4"/>
+        <Trade_CashPay Row="6" Col="6"/>
+      </DataLocation>
+    </OutTable>
+  </OutTableDesc>
+  <OutLineDesc>
+    <OutLine x1="2160" y1="670" x2="2160" y2="1720" Mode="2"/>
+    <!--分割竖线长-->
+  </OutLineDesc>
+</root>

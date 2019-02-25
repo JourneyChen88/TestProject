@@ -1,0 +1,2325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="VisitRegister" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/HisService.VisitRegister" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/HisService.Entity" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/HisService.VisitRegister.Application" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/HisService.VisitRegister.Input" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd7" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd8" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IVisitRegister_GetBigSickAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBigSickAll" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetBigSickAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBigSickAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetCertificateTypeAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCertificateTypeAll" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetCertificateTypeAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCertificateTypeAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPayMethodAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayMethodAll" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPayMethodAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayMethodAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetBloodTypeAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBloodTypeAll" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetBloodTypeAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBloodTypeAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetMarriageAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMarriageAll" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetMarriageAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMarriageAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetNationalityAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNationalityAll" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetNationalityAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNationalityAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetNationAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNationAll" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetNationAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNationAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOccupationAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOccupationAll" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOccupationAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOccupationAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetSexAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSexAll" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetSexAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSexAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetInvoiceControlByMac_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceControlByMac" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetInvoiceControlByMac_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceControlByMacResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_InsertInvoiceControl_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertInvoiceControl" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_InsertInvoiceControl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertInvoiceControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_UpdateInvoiceControl_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInvoiceControl" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_UpdateInvoiceControl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInvoiceControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_UpdateInvoiceControlMac_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInvoiceControlMac" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_UpdateInvoiceControlMac_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInvoiceControlMacResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_UpdateInvoiceRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInvoiceRecord" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_UpdateInvoiceRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInvoiceRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOpdRoomInfoNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpdRoomInfoNew" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOpdRoomInfoNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpdRoomInfoNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDoctorInfoNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDoctorInfoNew" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDoctorInfoNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDoctorInfoNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientInfoByChartNoNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientInfoByChartNoNew" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientInfoByChartNoNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientInfoByChartNoNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetAreaNoAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAreaNoAll" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetAreaNoAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAreaNoAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientBy_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientBy" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientBy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientByResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientByCardNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientByCardNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientByCardNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientByCardNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetChargeTypeAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetChargeTypeAll" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetChargeTypeAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetChargeTypeAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientByIdNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientByIdNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientByIdNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientByIdNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientPreorder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientPreorder" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientPreorder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientPreorderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPartTypeSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartTypeSet" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPartTypeSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartTypeSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitLevelAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitLevelAll" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitLevelAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitLevelAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOpdRoomSetAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpdRoomSetAll" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOpdRoomSetAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpdRoomSetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetEmgRoomSetListNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmgRoomSetListNew" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetEmgRoomSetListNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmgRoomSetListNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPartTypeSetList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartTypeSetList" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPartTypeSetList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartTypeSetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOpdRoomSetList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpdRoomSetList" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOpdRoomSetList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpdRoomSetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetEmgRoomSetList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmgRoomSetList" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetEmgRoomSetList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmgRoomSetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDivisionList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivisionList" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDivisionList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivisionListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetHospitalList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHospitalList" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetHospitalList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHospitalListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetHolidayList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHolidayList" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetHolidayList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHolidayListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetAreaNoList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAreaNoList" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetAreaNoList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAreaNoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDiscountSetList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscountSetList" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDiscountSetList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscountSetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDiscountList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscountList" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDiscountList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscountListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDoctorInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDoctorInfo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDoctorInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDoctorInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetEmpNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetEmpNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetEmpCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpCode" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetEmpCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDivNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDivNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDivCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivCode" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDivCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetAllDoctorList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDoctorList" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetAllDoctorList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDoctorListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDrLisByDivAndTitlet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrLisByDivAndTitlet" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDrLisByDivAndTitlet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrLisByDivAndTitletResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_AppendPatient_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppendPatient" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_AppendPatient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppendPatientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_UpdatePatient_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePatient" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_UpdatePatient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePatientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_UpdatePatientByInHosp_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePatientByInHosp" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_UpdatePatientByInHosp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePatientByInHospResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientInfoByIdNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientInfoByIdNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientInfoByIdNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientInfoByIdNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_SetRegisteredWay_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetRegisteredWay" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_SetRegisteredWay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetRegisteredWayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientIsGreenChannel_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientIsGreenChannel" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientIsGreenChannel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientIsGreenChannelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetCardType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardType" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetCardType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientInfoByChartNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientInfoByChartNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientInfoByChartNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientInfoByChartNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOutPatientListNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientListNew" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOutPatientListNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientListNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitRecordByVisitNoNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitRecordByVisitNoNew" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitRecordByVisitNoNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitRecordByVisitNoNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitRecordByCardNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitRecordByCardNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitRecordByCardNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitRecordByCardNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitRecordIn24HoursByCardNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitRecordIn24HoursByCardNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitRecordIn24HoursByCardNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitRecordIn24HoursByCardNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitRecordByChartNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitRecordByChartNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitRecordByChartNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitRecordByChartNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitRecordIn24HoursByChartNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitRecordIn24HoursByChartNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitRecordIn24HoursByChartNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitRecordIn24HoursByChartNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOutPatientList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientList" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOutPatientList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOutPatientListByVisitNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientListByVisitNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOutPatientListByVisitNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientListByVisitNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOutPatientBySeqNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientBySeqNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOutPatientBySeqNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientBySeqNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOutPatientListForVoiceNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientListForVoiceNew" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOutPatientListForVoiceNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientListForVoiceNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetEmergencyListNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmergencyListNew" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetEmergencyListNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmergencyListNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOutPatientListForVoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientListForVoice" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOutPatientListForVoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientListForVoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetEmergencyList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmergencyList" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetEmergencyList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmergencyListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientCaution_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientCaution" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientCaution_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientCautionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDebtRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDebtRecord" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDebtRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDebtRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_InsertHisPatientInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertHisPatientInfo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_InsertHisPatientInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertHisPatientInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_InsertHisGhxh_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertHisGhxh" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_InsertHisGhxh_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertHisGhxhResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientInfoSearch_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientInfoSearch" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPatientInfoSearch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientInfoSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetCombineChart_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCombineChart" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetCombineChart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCombineChartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_InsertCombineChart_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCombineChart" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_InsertCombineChart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCombineChartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_InsertRegisterOver_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRegisterOver" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_InsertRegisterOver_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRegisterOverResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_DeleteCombineChartByOld_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCombineChartByOld" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_DeleteCombineChartByOld_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCombineChartByOldResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_DeleteCombineChartByNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCombineChartByNew" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_DeleteCombineChartByNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCombineChartByNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetGreenChannelPatientCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGreenChannelPatientCount" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetGreenChannelPatientCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGreenChannelPatientCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOutPatientListForSearch_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientListForSearch" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOutPatientListForSearch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientListForSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitRecordZone_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitRecordZone" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitRecordZone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitRecordZoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPtDiscount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPtDiscount" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPtDiscount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPtDiscountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitScheduleBySctionNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitScheduleBySctionNew" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitScheduleBySctionNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitScheduleBySctionNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDiscountSetListNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscountSetListNew" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDiscountSetListNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscountSetListNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitScheduleBySction_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitScheduleBySction" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitScheduleBySction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitScheduleBySctionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetViewStatusMark_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetViewStatusMark" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetViewStatusMark_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetViewStatusMarkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOpdRoomNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpdRoomNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOpdRoomNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpdRoomNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitScheduleDtForVoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitScheduleDtForVoice" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitScheduleDtForVoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitScheduleDtForVoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_AppendRegisterForGreenChannel_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppendRegisterForGreenChannel" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_AppendRegisterForGreenChannel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppendRegisterForGreenChannelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_AddPatient_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPatient" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_AddPatient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPatientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_ModifyPatient_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPatient" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_ModifyPatient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPatientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_AddRegister_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddRegister" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_AddRegister_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_AddRegPayRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddRegPayRecord" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_AddRegPayRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddRegPayRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_AppendRegister_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppendRegister" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_AppendRegister_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppendRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_CancelRegister_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelRegister" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_CancelRegister_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_RefundRegister_InputMessage">
+    <wsdl:part name="parameters" element="tns:RefundRegister" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_RefundRegister_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RefundRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_RollBackRegister_InputMessage">
+    <wsdl:part name="parameters" element="tns:RollBackRegister" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_RollBackRegister_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RollBackRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_UpdateCheckInTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCheckInTime" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_UpdateCheckInTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCheckInTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetMainDivision_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMainDivision" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetMainDivision_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMainDivisionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetSubDivision_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubDivision" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetSubDivision_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubDivisionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDrListByDivNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrListByDivNew" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDrListByDivNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrListByDivNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDrListByDiv_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrListByDiv" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDrListByDiv_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrListByDivResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDrListByDivAndTitle_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrListByDivAndTitle" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDrListByDivAndTitle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrListByDivAndTitleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitScheduleDtByDrNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitScheduleDtByDrNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitScheduleDtByDrNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitScheduleDtByDrNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOpdDrList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpdDrList" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOpdDrList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpdDrListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOutPatientCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientCount" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOutPatientCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOpdRoomInfoForLamp_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpdRoomInfoForLamp" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOpdRoomInfoForLamp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpdRoomInfoForLampResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetRegisterInfoForLamp_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegisterInfoForLamp" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetRegisterInfoForLamp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegisterInfoForLampResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_UpdateCallInTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCallInTime" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_UpdateCallInTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCallInTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetRegisterInfo708_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegisterInfo708" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetRegisterInfo708_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegisterInfo708Response" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitScheduleByDivNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitScheduleByDivNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitScheduleByDivNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitScheduleByDivNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetMajorDiv_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMajorDiv" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetMajorDiv_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMajorDivResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetSubDiv_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubDiv" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetSubDiv_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubDivResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_Print_InputMessage">
+    <wsdl:part name="parameters" element="tns:Print" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_Print_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrintResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_NewPrint_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewPrint" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_NewPrint_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewPrintResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_NewOverPrint_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewOverPrint" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_NewOverPrint_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewOverPrintResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetParamCtrlValue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetParamCtrlValue" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetParamCtrlValue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetParamCtrlValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitLevelPrice_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitLevelPrice" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetVisitLevelPrice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitLevelPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_TransVisitRegInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransVisitRegInfo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_TransVisitRegInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransVisitRegInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDivisionDrList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivisionDrList" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDivisionDrList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivisionDrListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOpdDivisionList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpdDivisionList" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetOpdDivisionList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpdDivisionListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDivNoByEmpNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivNoByEmpNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDivNoByEmpNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivNoByEmpNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDivNoListByEmpNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivNoListByEmpNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetDivNoListByEmpNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivNoListByEmpNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPtInfoByChartNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPtInfoByChartNo" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPtInfoByChartNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPtInfoByChartNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPtInfoNoTriage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPtInfoNoTriage" />
+  </wsdl:message>
+  <wsdl:message name="IVisitRegister_GetPtInfoNoTriage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPtInfoNoTriageResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="false" name="IVisitRegister">
+    <wsdl:operation name="GetBigSickAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetBigSickAll" message="tns:IVisitRegister_GetBigSickAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetBigSickAllResponse" message="tns:IVisitRegister_GetBigSickAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCertificateTypeAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetCertificateTypeAll" message="tns:IVisitRegister_GetCertificateTypeAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetCertificateTypeAllResponse" message="tns:IVisitRegister_GetCertificateTypeAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayMethodAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetPayMethodAll" message="tns:IVisitRegister_GetPayMethodAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetPayMethodAllResponse" message="tns:IVisitRegister_GetPayMethodAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBloodTypeAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetBloodTypeAll" message="tns:IVisitRegister_GetBloodTypeAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetBloodTypeAllResponse" message="tns:IVisitRegister_GetBloodTypeAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMarriageAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetMarriageAll" message="tns:IVisitRegister_GetMarriageAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetMarriageAllResponse" message="tns:IVisitRegister_GetMarriageAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNationalityAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetNationalityAll" message="tns:IVisitRegister_GetNationalityAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetNationalityAllResponse" message="tns:IVisitRegister_GetNationalityAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNationAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetNationAll" message="tns:IVisitRegister_GetNationAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetNationAllResponse" message="tns:IVisitRegister_GetNationAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOccupationAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetOccupationAll" message="tns:IVisitRegister_GetOccupationAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetOccupationAllResponse" message="tns:IVisitRegister_GetOccupationAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSexAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetSexAll" message="tns:IVisitRegister_GetSexAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetSexAllResponse" message="tns:IVisitRegister_GetSexAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoiceControlByMac">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetInvoiceControlByMac" message="tns:IVisitRegister_GetInvoiceControlByMac_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetInvoiceControlByMacResponse" message="tns:IVisitRegister_GetInvoiceControlByMac_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertInvoiceControl">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/InsertInvoiceControl" message="tns:IVisitRegister_InsertInvoiceControl_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/InsertInvoiceControlResponse" message="tns:IVisitRegister_InsertInvoiceControl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInvoiceControl">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/UpdateInvoiceControl" message="tns:IVisitRegister_UpdateInvoiceControl_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/UpdateInvoiceControlResponse" message="tns:IVisitRegister_UpdateInvoiceControl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInvoiceControlMac">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/UpdateInvoiceControlMac" message="tns:IVisitRegister_UpdateInvoiceControlMac_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/UpdateInvoiceControlMacResponse" message="tns:IVisitRegister_UpdateInvoiceControlMac_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInvoiceRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/UpdateInvoiceRecord" message="tns:IVisitRegister_UpdateInvoiceRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/UpdateInvoiceRecordResponse" message="tns:IVisitRegister_UpdateInvoiceRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOpdRoomInfoNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetOpdRoomInfoNew" message="tns:IVisitRegister_GetOpdRoomInfoNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetOpdRoomInfoNewResponse" message="tns:IVisitRegister_GetOpdRoomInfoNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDoctorInfoNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetDoctorInfoNew" message="tns:IVisitRegister_GetDoctorInfoNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetDoctorInfoNewResponse" message="tns:IVisitRegister_GetDoctorInfoNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientInfoByChartNoNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientInfoByChartNoNew" message="tns:IVisitRegister_GetPatientInfoByChartNoNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientInfoByChartNoNewResponse" message="tns:IVisitRegister_GetPatientInfoByChartNoNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAreaNoAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetAreaNoAll" message="tns:IVisitRegister_GetAreaNoAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetAreaNoAllResponse" message="tns:IVisitRegister_GetAreaNoAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientBy">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientBy" message="tns:IVisitRegister_GetPatientBy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientByResponse" message="tns:IVisitRegister_GetPatientBy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientByCardNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientByCardNo" message="tns:IVisitRegister_GetPatientByCardNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientByCardNoResponse" message="tns:IVisitRegister_GetPatientByCardNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChargeTypeAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetChargeTypeAll" message="tns:IVisitRegister_GetChargeTypeAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetChargeTypeAllResponse" message="tns:IVisitRegister_GetChargeTypeAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientByIdNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientByIdNo" message="tns:IVisitRegister_GetPatientByIdNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientByIdNoResponse" message="tns:IVisitRegister_GetPatientByIdNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientPreorder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientPreorder" message="tns:IVisitRegister_GetPatientPreorder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientPreorderResponse" message="tns:IVisitRegister_GetPatientPreorder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartTypeSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetPartTypeSet" message="tns:IVisitRegister_GetPartTypeSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetPartTypeSetResponse" message="tns:IVisitRegister_GetPartTypeSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitLevelAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitLevelAll" message="tns:IVisitRegister_GetVisitLevelAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitLevelAllResponse" message="tns:IVisitRegister_GetVisitLevelAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOpdRoomSetAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetOpdRoomSetAll" message="tns:IVisitRegister_GetOpdRoomSetAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetOpdRoomSetAllResponse" message="tns:IVisitRegister_GetOpdRoomSetAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmgRoomSetListNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetEmgRoomSetListNew" message="tns:IVisitRegister_GetEmgRoomSetListNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetEmgRoomSetListNewResponse" message="tns:IVisitRegister_GetEmgRoomSetListNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartTypeSetList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetPartTypeSetList" message="tns:IVisitRegister_GetPartTypeSetList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetPartTypeSetListResponse" message="tns:IVisitRegister_GetPartTypeSetList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOpdRoomSetList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetOpdRoomSetList" message="tns:IVisitRegister_GetOpdRoomSetList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetOpdRoomSetListResponse" message="tns:IVisitRegister_GetOpdRoomSetList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmgRoomSetList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetEmgRoomSetList" message="tns:IVisitRegister_GetEmgRoomSetList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetEmgRoomSetListResponse" message="tns:IVisitRegister_GetEmgRoomSetList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDivisionList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetDivisionList" message="tns:IVisitRegister_GetDivisionList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetDivisionListResponse" message="tns:IVisitRegister_GetDivisionList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHospitalList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetHospitalList" message="tns:IVisitRegister_GetHospitalList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetHospitalListResponse" message="tns:IVisitRegister_GetHospitalList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidayList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetHolidayList" message="tns:IVisitRegister_GetHolidayList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetHolidayListResponse" message="tns:IVisitRegister_GetHolidayList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAreaNoList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetAreaNoList" message="tns:IVisitRegister_GetAreaNoList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetAreaNoListResponse" message="tns:IVisitRegister_GetAreaNoList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscountSetList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetDiscountSetList" message="tns:IVisitRegister_GetDiscountSetList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetDiscountSetListResponse" message="tns:IVisitRegister_GetDiscountSetList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscountList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetDiscountList" message="tns:IVisitRegister_GetDiscountList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetDiscountListResponse" message="tns:IVisitRegister_GetDiscountList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDoctorInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetDoctorInfo" message="tns:IVisitRegister_GetDoctorInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetDoctorInfoResponse" message="tns:IVisitRegister_GetDoctorInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetEmpNo" message="tns:IVisitRegister_GetEmpNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetEmpNoResponse" message="tns:IVisitRegister_GetEmpNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetEmpCode" message="tns:IVisitRegister_GetEmpCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetEmpCodeResponse" message="tns:IVisitRegister_GetEmpCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDivNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetDivNo" message="tns:IVisitRegister_GetDivNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetDivNoResponse" message="tns:IVisitRegister_GetDivNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDivCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetDivCode" message="tns:IVisitRegister_GetDivCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetDivCodeResponse" message="tns:IVisitRegister_GetDivCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllDoctorList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetAllDoctorList" message="tns:IVisitRegister_GetAllDoctorList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetAllDoctorListResponse" message="tns:IVisitRegister_GetAllDoctorList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrLisByDivAndTitlet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetDrLisByDivAndTitlet" message="tns:IVisitRegister_GetDrLisByDivAndTitlet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetDrLisByDivAndTitletResponse" message="tns:IVisitRegister_GetDrLisByDivAndTitlet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppendPatient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/AppendPatient" message="tns:IVisitRegister_AppendPatient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/AppendPatientResponse" message="tns:IVisitRegister_AppendPatient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePatient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/UpdatePatient" message="tns:IVisitRegister_UpdatePatient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/UpdatePatientResponse" message="tns:IVisitRegister_UpdatePatient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePatientByInHosp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/UpdatePatientByInHosp" message="tns:IVisitRegister_UpdatePatientByInHosp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/UpdatePatientByInHospResponse" message="tns:IVisitRegister_UpdatePatientByInHosp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientInfoByIdNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientInfoByIdNo" message="tns:IVisitRegister_GetPatientInfoByIdNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientInfoByIdNoResponse" message="tns:IVisitRegister_GetPatientInfoByIdNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetRegisteredWay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/SetRegisteredWay" message="tns:IVisitRegister_SetRegisteredWay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/SetRegisteredWayResponse" message="tns:IVisitRegister_SetRegisteredWay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientIsGreenChannel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientIsGreenChannel" message="tns:IVisitRegister_GetPatientIsGreenChannel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientIsGreenChannelResponse" message="tns:IVisitRegister_GetPatientIsGreenChannel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCardType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetCardType" message="tns:IVisitRegister_GetCardType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetCardTypeResponse" message="tns:IVisitRegister_GetCardType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientInfoByChartNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientInfoByChartNo" message="tns:IVisitRegister_GetPatientInfoByChartNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientInfoByChartNoResponse" message="tns:IVisitRegister_GetPatientInfoByChartNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatientListNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetOutPatientListNew" message="tns:IVisitRegister_GetOutPatientListNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetOutPatientListNewResponse" message="tns:IVisitRegister_GetOutPatientListNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitRecordByVisitNoNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitRecordByVisitNoNew" message="tns:IVisitRegister_GetVisitRecordByVisitNoNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitRecordByVisitNoNewResponse" message="tns:IVisitRegister_GetVisitRecordByVisitNoNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitRecordByCardNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitRecordByCardNo" message="tns:IVisitRegister_GetVisitRecordByCardNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitRecordByCardNoResponse" message="tns:IVisitRegister_GetVisitRecordByCardNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitRecordIn24HoursByCardNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitRecordIn24HoursByCardNo" message="tns:IVisitRegister_GetVisitRecordIn24HoursByCardNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitRecordIn24HoursByCardNoResponse" message="tns:IVisitRegister_GetVisitRecordIn24HoursByCardNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitRecordByChartNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitRecordByChartNo" message="tns:IVisitRegister_GetVisitRecordByChartNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitRecordByChartNoResponse" message="tns:IVisitRegister_GetVisitRecordByChartNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitRecordIn24HoursByChartNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitRecordIn24HoursByChartNo" message="tns:IVisitRegister_GetVisitRecordIn24HoursByChartNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitRecordIn24HoursByChartNoResponse" message="tns:IVisitRegister_GetVisitRecordIn24HoursByChartNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatientList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetOutPatientList" message="tns:IVisitRegister_GetOutPatientList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetOutPatientListResponse" message="tns:IVisitRegister_GetOutPatientList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatientListByVisitNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetOutPatientListByVisitNo" message="tns:IVisitRegister_GetOutPatientListByVisitNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetOutPatientListByVisitNoResponse" message="tns:IVisitRegister_GetOutPatientListByVisitNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatientBySeqNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetOutPatientBySeqNo" message="tns:IVisitRegister_GetOutPatientBySeqNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetOutPatientBySeqNoResponse" message="tns:IVisitRegister_GetOutPatientBySeqNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatientListForVoiceNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetOutPatientListForVoiceNew" message="tns:IVisitRegister_GetOutPatientListForVoiceNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetOutPatientListForVoiceNewResponse" message="tns:IVisitRegister_GetOutPatientListForVoiceNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmergencyListNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetEmergencyListNew" message="tns:IVisitRegister_GetEmergencyListNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetEmergencyListNewResponse" message="tns:IVisitRegister_GetEmergencyListNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatientListForVoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetOutPatientListForVoice" message="tns:IVisitRegister_GetOutPatientListForVoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetOutPatientListForVoiceResponse" message="tns:IVisitRegister_GetOutPatientListForVoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmergencyList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetEmergencyList" message="tns:IVisitRegister_GetEmergencyList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetEmergencyListResponse" message="tns:IVisitRegister_GetEmergencyList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientCaution">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientCaution" message="tns:IVisitRegister_GetPatientCaution_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientCautionResponse" message="tns:IVisitRegister_GetPatientCaution_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDebtRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetDebtRecord" message="tns:IVisitRegister_GetDebtRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetDebtRecordResponse" message="tns:IVisitRegister_GetDebtRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertHisPatientInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/InsertHisPatientInfo" message="tns:IVisitRegister_InsertHisPatientInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/InsertHisPatientInfoResponse" message="tns:IVisitRegister_InsertHisPatientInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertHisGhxh">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/InsertHisGhxh" message="tns:IVisitRegister_InsertHisGhxh_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/InsertHisGhxhResponse" message="tns:IVisitRegister_InsertHisGhxh_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientInfoSearch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientInfoSearch" message="tns:IVisitRegister_GetPatientInfoSearch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetPatientInfoSearchResponse" message="tns:IVisitRegister_GetPatientInfoSearch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCombineChart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetCombineChart" message="tns:IVisitRegister_GetCombineChart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetCombineChartResponse" message="tns:IVisitRegister_GetCombineChart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCombineChart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/InsertCombineChart" message="tns:IVisitRegister_InsertCombineChart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/InsertCombineChartResponse" message="tns:IVisitRegister_InsertCombineChart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRegisterOver">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/InsertRegisterOver" message="tns:IVisitRegister_InsertRegisterOver_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/InsertRegisterOverResponse" message="tns:IVisitRegister_InsertRegisterOver_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCombineChartByOld">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/DeleteCombineChartByOld" message="tns:IVisitRegister_DeleteCombineChartByOld_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/DeleteCombineChartByOldResponse" message="tns:IVisitRegister_DeleteCombineChartByOld_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCombineChartByNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/DeleteCombineChartByNew" message="tns:IVisitRegister_DeleteCombineChartByNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/DeleteCombineChartByNewResponse" message="tns:IVisitRegister_DeleteCombineChartByNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGreenChannelPatientCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetGreenChannelPatientCount" message="tns:IVisitRegister_GetGreenChannelPatientCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetGreenChannelPatientCountResponse" message="tns:IVisitRegister_GetGreenChannelPatientCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatientListForSearch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetOutPatientListForSearch" message="tns:IVisitRegister_GetOutPatientListForSearch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetOutPatientListForSearchResponse" message="tns:IVisitRegister_GetOutPatientListForSearch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitRecordZone">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitRecordZone" message="tns:IVisitRegister_GetVisitRecordZone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitRecordZoneResponse" message="tns:IVisitRegister_GetVisitRecordZone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPtDiscount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetPtDiscount" message="tns:IVisitRegister_GetPtDiscount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetPtDiscountResponse" message="tns:IVisitRegister_GetPtDiscount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitScheduleBySctionNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitScheduleBySctionNew" message="tns:IVisitRegister_GetVisitScheduleBySctionNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitScheduleBySctionNewResponse" message="tns:IVisitRegister_GetVisitScheduleBySctionNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscountSetListNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetDiscountSetListNew" message="tns:IVisitRegister_GetDiscountSetListNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetDiscountSetListNewResponse" message="tns:IVisitRegister_GetDiscountSetListNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitScheduleBySction">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitScheduleBySction" message="tns:IVisitRegister_GetVisitScheduleBySction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitScheduleBySctionResponse" message="tns:IVisitRegister_GetVisitScheduleBySction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetViewStatusMark">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetViewStatusMark" message="tns:IVisitRegister_GetViewStatusMark_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetViewStatusMarkResponse" message="tns:IVisitRegister_GetViewStatusMark_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOpdRoomNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetOpdRoomNo" message="tns:IVisitRegister_GetOpdRoomNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetOpdRoomNoResponse" message="tns:IVisitRegister_GetOpdRoomNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitScheduleDtForVoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitScheduleDtForVoice" message="tns:IVisitRegister_GetVisitScheduleDtForVoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitScheduleDtForVoiceResponse" message="tns:IVisitRegister_GetVisitScheduleDtForVoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppendRegisterForGreenChannel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/AppendRegisterForGreenChannel" message="tns:IVisitRegister_AppendRegisterForGreenChannel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/AppendRegisterForGreenChannelResponse" message="tns:IVisitRegister_AppendRegisterForGreenChannel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPatient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/AddPatient" message="tns:IVisitRegister_AddPatient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/AddPatientResponse" message="tns:IVisitRegister_AddPatient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPatient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/ModifyPatient" message="tns:IVisitRegister_ModifyPatient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/ModifyPatientResponse" message="tns:IVisitRegister_ModifyPatient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRegister">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/AddRegister" message="tns:IVisitRegister_AddRegister_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/AddRegisterResponse" message="tns:IVisitRegister_AddRegister_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRegPayRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/AddRegPayRecord" message="tns:IVisitRegister_AddRegPayRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/AddRegPayRecordResponse" message="tns:IVisitRegister_AddRegPayRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppendRegister">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/AppendRegister" message="tns:IVisitRegister_AppendRegister_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/AppendRegisterResponse" message="tns:IVisitRegister_AppendRegister_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelRegister">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/CancelRegister" message="tns:IVisitRegister_CancelRegister_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/CancelRegisterResponse" message="tns:IVisitRegister_CancelRegister_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RefundRegister">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/RefundRegister" message="tns:IVisitRegister_RefundRegister_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/RefundRegisterResponse" message="tns:IVisitRegister_RefundRegister_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RollBackRegister">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/RollBackRegister" message="tns:IVisitRegister_RollBackRegister_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/RollBackRegisterResponse" message="tns:IVisitRegister_RollBackRegister_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCheckInTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/UpdateCheckInTime" message="tns:IVisitRegister_UpdateCheckInTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/UpdateCheckInTimeResponse" message="tns:IVisitRegister_UpdateCheckInTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMainDivision">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetMainDivision" message="tns:IVisitRegister_GetMainDivision_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetMainDivisionResponse" message="tns:IVisitRegister_GetMainDivision_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubDivision">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetSubDivision" message="tns:IVisitRegister_GetSubDivision_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetSubDivisionResponse" message="tns:IVisitRegister_GetSubDivision_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrListByDivNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetDrListByDivNew" message="tns:IVisitRegister_GetDrListByDivNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetDrListByDivNewResponse" message="tns:IVisitRegister_GetDrListByDivNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrListByDiv">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetDrListByDiv" message="tns:IVisitRegister_GetDrListByDiv_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetDrListByDivResponse" message="tns:IVisitRegister_GetDrListByDiv_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrListByDivAndTitle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetDrListByDivAndTitle" message="tns:IVisitRegister_GetDrListByDivAndTitle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetDrListByDivAndTitleResponse" message="tns:IVisitRegister_GetDrListByDivAndTitle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitScheduleDtByDrNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitScheduleDtByDrNo" message="tns:IVisitRegister_GetVisitScheduleDtByDrNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitScheduleDtByDrNoResponse" message="tns:IVisitRegister_GetVisitScheduleDtByDrNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOpdDrList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetOpdDrList" message="tns:IVisitRegister_GetOpdDrList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetOpdDrListResponse" message="tns:IVisitRegister_GetOpdDrList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatientCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetOutPatientCount" message="tns:IVisitRegister_GetOutPatientCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetOutPatientCountResponse" message="tns:IVisitRegister_GetOutPatientCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOpdRoomInfoForLamp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetOpdRoomInfoForLamp" message="tns:IVisitRegister_GetOpdRoomInfoForLamp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetOpdRoomInfoForLampResponse" message="tns:IVisitRegister_GetOpdRoomInfoForLamp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegisterInfoForLamp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetRegisterInfoForLamp" message="tns:IVisitRegister_GetRegisterInfoForLamp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetRegisterInfoForLampResponse" message="tns:IVisitRegister_GetRegisterInfoForLamp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCallInTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/UpdateCallInTime" message="tns:IVisitRegister_UpdateCallInTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/UpdateCallInTimeResponse" message="tns:IVisitRegister_UpdateCallInTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegisterInfo708">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetRegisterInfo708" message="tns:IVisitRegister_GetRegisterInfo708_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetRegisterInfo708Response" message="tns:IVisitRegister_GetRegisterInfo708_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitScheduleByDivNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitScheduleByDivNo" message="tns:IVisitRegister_GetVisitScheduleByDivNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitScheduleByDivNoResponse" message="tns:IVisitRegister_GetVisitScheduleByDivNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMajorDiv">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetMajorDiv" message="tns:IVisitRegister_GetMajorDiv_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetMajorDivResponse" message="tns:IVisitRegister_GetMajorDiv_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubDiv">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetSubDiv" message="tns:IVisitRegister_GetSubDiv_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetSubDivResponse" message="tns:IVisitRegister_GetSubDiv_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Print">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/Print" message="tns:IVisitRegister_Print_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/PrintResponse" message="tns:IVisitRegister_Print_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewPrint">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/NewPrint" message="tns:IVisitRegister_NewPrint_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/NewPrintResponse" message="tns:IVisitRegister_NewPrint_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewOverPrint">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/NewOverPrint" message="tns:IVisitRegister_NewOverPrint_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/NewOverPrintResponse" message="tns:IVisitRegister_NewOverPrint_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParamCtrlValue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetParamCtrlValue" message="tns:IVisitRegister_GetParamCtrlValue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetParamCtrlValueResponse" message="tns:IVisitRegister_GetParamCtrlValue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitLevelPrice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitLevelPrice" message="tns:IVisitRegister_GetVisitLevelPrice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetVisitLevelPriceResponse" message="tns:IVisitRegister_GetVisitLevelPrice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransVisitRegInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/TransVisitRegInfo" message="tns:IVisitRegister_TransVisitRegInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/TransVisitRegInfoResponse" message="tns:IVisitRegister_TransVisitRegInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDivisionDrList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetDivisionDrList" message="tns:IVisitRegister_GetDivisionDrList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetDivisionDrListResponse" message="tns:IVisitRegister_GetDivisionDrList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOpdDivisionList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetOpdDivisionList" message="tns:IVisitRegister_GetOpdDivisionList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetOpdDivisionListResponse" message="tns:IVisitRegister_GetOpdDivisionList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDivNoByEmpNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetDivNoByEmpNo" message="tns:IVisitRegister_GetDivNoByEmpNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetDivNoByEmpNoResponse" message="tns:IVisitRegister_GetDivNoByEmpNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDivNoListByEmpNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetDivNoListByEmpNo" message="tns:IVisitRegister_GetDivNoListByEmpNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetDivNoListByEmpNoResponse" message="tns:IVisitRegister_GetDivNoListByEmpNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPtInfoByChartNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetPtInfoByChartNo" message="tns:IVisitRegister_GetPtInfoByChartNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetPtInfoByChartNoResponse" message="tns:IVisitRegister_GetPtInfoByChartNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPtInfoNoTriage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVisitRegister/GetPtInfoNoTriage" message="tns:IVisitRegister_GetPtInfoNoTriage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVisitRegister/GetPtInfoNoTriageResponse" message="tns:IVisitRegister_GetPtInfoNoTriage_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VisitRegister" type="tns:IVisitRegister">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetBigSickAll">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetBigSickAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCertificateTypeAll">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetCertificateTypeAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPayMethodAll">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetPayMethodAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBloodTypeAll">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetBloodTypeAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMarriageAll">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetMarriageAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNationalityAll">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetNationalityAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNationAll">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetNationAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOccupationAll">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetOccupationAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSexAll">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetSexAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoiceControlByMac">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetInvoiceControlByMac" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertInvoiceControl">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/InsertInvoiceControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInvoiceControl">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/UpdateInvoiceControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInvoiceControlMac">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/UpdateInvoiceControlMac" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInvoiceRecord">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/UpdateInvoiceRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpdRoomInfoNew">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetOpdRoomInfoNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDoctorInfoNew">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetDoctorInfoNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientInfoByChartNoNew">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetPatientInfoByChartNoNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAreaNoAll">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetAreaNoAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientBy">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetPatientBy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientByCardNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetPatientByCardNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChargeTypeAll">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetChargeTypeAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientByIdNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetPatientByIdNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientPreorder">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetPatientPreorder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPartTypeSet">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetPartTypeSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitLevelAll">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetVisitLevelAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpdRoomSetAll">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetOpdRoomSetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmgRoomSetListNew">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetEmgRoomSetListNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPartTypeSetList">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetPartTypeSetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpdRoomSetList">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetOpdRoomSetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmgRoomSetList">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetEmgRoomSetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDivisionList">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetDivisionList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHospitalList">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetHospitalList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidayList">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetHolidayList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAreaNoList">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetAreaNoList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscountSetList">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetDiscountSetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscountList">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetDiscountList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDoctorInfo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetDoctorInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetEmpNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpCode">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetEmpCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDivNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetDivNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDivCode">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetDivCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllDoctorList">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetAllDoctorList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrLisByDivAndTitlet">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetDrLisByDivAndTitlet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AppendPatient">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/AppendPatient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePatient">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/UpdatePatient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePatientByInHosp">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/UpdatePatientByInHosp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientInfoByIdNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetPatientInfoByIdNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetRegisteredWay">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/SetRegisteredWay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientIsGreenChannel">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetPatientIsGreenChannel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCardType">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetCardType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientInfoByChartNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetPatientInfoByChartNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatientListNew">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetOutPatientListNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitRecordByVisitNoNew">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetVisitRecordByVisitNoNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitRecordByCardNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetVisitRecordByCardNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitRecordIn24HoursByCardNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetVisitRecordIn24HoursByCardNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitRecordByChartNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetVisitRecordByChartNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitRecordIn24HoursByChartNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetVisitRecordIn24HoursByChartNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatientList">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetOutPatientList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatientListByVisitNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetOutPatientListByVisitNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatientBySeqNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetOutPatientBySeqNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatientListForVoiceNew">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetOutPatientListForVoiceNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmergencyListNew">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetEmergencyListNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatientListForVoice">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetOutPatientListForVoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmergencyList">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetEmergencyList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientCaution">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetPatientCaution" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDebtRecord">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetDebtRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertHisPatientInfo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/InsertHisPatientInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertHisGhxh">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/InsertHisGhxh" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientInfoSearch">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetPatientInfoSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCombineChart">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetCombineChart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCombineChart">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/InsertCombineChart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRegisterOver">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/InsertRegisterOver" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCombineChartByOld">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/DeleteCombineChartByOld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCombineChartByNew">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/DeleteCombineChartByNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGreenChannelPatientCount">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetGreenChannelPatientCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatientListForSearch">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetOutPatientListForSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitRecordZone">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetVisitRecordZone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPtDiscount">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetPtDiscount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitScheduleBySctionNew">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetVisitScheduleBySctionNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscountSetListNew">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetDiscountSetListNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitScheduleBySction">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetVisitScheduleBySction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetViewStatusMark">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetViewStatusMark" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpdRoomNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetOpdRoomNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitScheduleDtForVoice">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetVisitScheduleDtForVoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AppendRegisterForGreenChannel">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/AppendRegisterForGreenChannel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPatient">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/AddPatient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPatient">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/ModifyPatient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRegister">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/AddRegister" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRegPayRecord">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/AddRegPayRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AppendRegister">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/AppendRegister" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelRegister">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/CancelRegister" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefundRegister">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/RefundRegister" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RollBackRegister">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/RollBackRegister" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCheckInTime">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/UpdateCheckInTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMainDivision">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetMainDivision" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubDivision">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetSubDivision" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrListByDivNew">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetDrListByDivNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrListByDiv">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetDrListByDiv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrListByDivAndTitle">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetDrListByDivAndTitle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitScheduleDtByDrNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetVisitScheduleDtByDrNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpdDrList">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetOpdDrList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatientCount">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetOutPatientCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpdRoomInfoForLamp">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetOpdRoomInfoForLamp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegisterInfoForLamp">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetRegisterInfoForLamp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCallInTime">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/UpdateCallInTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegisterInfo708">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetRegisterInfo708" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitScheduleByDivNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetVisitScheduleByDivNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMajorDiv">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetMajorDiv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubDiv">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetSubDiv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Print">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/Print" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewPrint">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/NewPrint" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewOverPrint">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/NewOverPrint" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParamCtrlValue">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetParamCtrlValue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitLevelPrice">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetVisitLevelPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransVisitRegInfo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/TransVisitRegInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDivisionDrList">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetDivisionDrList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpdDivisionList">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetOpdDivisionList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDivNoByEmpNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetDivNoByEmpNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDivNoListByEmpNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetDivNoListByEmpNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPtInfoByChartNo">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetPtInfoByChartNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPtInfoNoTriage">
+      <soap:operation soapAction="http://tempuri.org/IVisitRegister/GetPtInfoNoTriage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VisitRegister">
+    <wsdl:port name="VisitRegister" binding="tns:VisitRegister">
+      <soap:address location="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

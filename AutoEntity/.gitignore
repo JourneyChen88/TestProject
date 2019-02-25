@@ -1,0 +1,7 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/Autoentity/bin/Debug/info.dat
+/Autoentity/bin/Release/info.dat
+/.vs/Autoentity/v15

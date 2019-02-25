@@ -1,0 +1,92 @@
+﻿@page "/book/listing"
+@using BlazorDemo.Model.DataModel
+@inject HttpClient client
+
+@if (Books == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>@nameof(Book.Id)</th>
+                <th>@nameof(Book.BookTitle)</th>
+                <th>@nameof(Book.ISBN)</th>
+                <th>@nameof(Book.PublisherName)</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Books)
+            {
+                <tr>
+                    <td>@book.Id</td>
+                    @if (EditBook?.Id == book.Id)
+                    {
+                        <td><input class="form-control" bind="@EditBook.BookTitle" /></td>
+                        <td><input class="form-control" bind="@EditBook.ISBN" /></td>
+                        <td><input class="form-control" bind="@EditBook.PublisherName" /></td>
+                        <td>
+                            <button class="btn btn-primary" onclick="@(_=>UpdateCommand(EditBook.Id, EditBook))">Update</button>
+                            <button class="btn btn-danger" onclick="@(_=>EditCommand(null))">Cancel</button>
+                        </td>
+                    }
+                    else
+                    {
+                        <td>@book.BookTitle</td>
+                        <td>@book.ISBN</td>
+                        <td>@book.PublisherName</td>
+                        <td><button class="btn btn-secondary" onclick="@(_=>EditCommand(book))">Edit</button></td>
+                    }
+                </tr>
+            }
+            <tr class="info">
+                <td></td>
+                <td><input class="form-control" bind="@AddBook.BookTitle" /></td>
+                <td><input class="form-control" bind="@AddBook.ISBN" /></td>
+                <td><input class="form-control" bind="@AddBook.PublisherName" /></td>
+                <td>
+                    <button class="btn btn-info" onclick="@(_=>AddCommand(AddBook))">Add New</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+}
+@functions{
+    IList<Book> Books = null;
+    Book EditBook = null;
+    Book AddBook = new Book();
+
+    protected override async Task OnInitAsync()
+    {
+        Books = await client.GetJsonAsync<List<Book>>("api/book");
+    }
+
+    protected async Task UpdateCommand(int bookId, Book editBook)
+    {
+        var editedBook = await client.PutJsonAsync<Book>($"api/book/{bookId}", editBook);
+        if (editBook != null)
+        {
+            var localBook = Books.FirstOrDefault(book => book.Id == bookId);
+            localBook = editedBook;
+            EditBook = null;
+        }
+    }
+
+    protected async Task AddCommand(Book addBook)
+    {
+        var addedBook = await client.PostJsonAsync<Book>("api/book/", addBook);
+        if (addedBook != null)
+        {
+            AddBook = new Book();
+            Books.Add(addedBook);
+        }
+    }
+
+    protected void EditCommand(Book book)
+    {
+        EditBook = book;
+    }
+}

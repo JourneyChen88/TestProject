@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HisService.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HisService.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfPatientPreorder">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PatientPreorder" nillable="true" type="tns:PatientPreorder" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPatientPreorder" nillable="true" type="tns:ArrayOfPatientPreorder" />
+  <xs:complexType name="PatientPreorder">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ChartNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DrNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:long" />
+      <xs:element minOccurs="0" name="IdNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsDel" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PreorderDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PreorderType" type="xs:int" />
+      <xs:element minOccurs="0" name="RegStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="UpdatedTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisitSction" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PatientPreorder" nillable="true" type="tns:PatientPreorder" />
+  <xs:complexType name="CardType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CardLenth" type="xs:int" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="IsDel" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsMedicare" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdatedTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedUser" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CardType" nillable="true" type="tns:CardType" />
+  <xs:complexType name="VisitRegRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BigSickCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CardNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CertificateNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChargeTypeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChartNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DrNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsDel" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsFormal" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsReferral" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVisited" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PatPreorderId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayRecordNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PtType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RegFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RegMethod" type="xs:int" />
+      <xs:element minOccurs="0" name="RegType" type="xs:int" />
+      <xs:element minOccurs="0" name="UpdatedTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisitDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="VisitNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisitSction" type="xs:int" />
+      <xs:element minOccurs="0" name="VisitSeqNo" type="xs:int" />
+      <xs:element minOccurs="0" name="VisitType" type="xs:int" />
+      <xs:element minOccurs="0" name="VisitZone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VisitRegRecord" nillable="true" type="tns:VisitRegRecord" />
+  <xs:complexType name="PayRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActualPay" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CardNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Change" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ChargeDivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChargeTypeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChartNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DealStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="DiscountPay" type="xs:decimal" />
+      <xs:element minOccurs="0" name="InvoiceNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceType" type="xs:int" />
+      <xs:element minOccurs="0" name="MedicareCenterNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MedicareDealNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MedicarePay" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PatientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PayMethodCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayRecordNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="RecordTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RecordUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RefundNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rounding" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PayRecord" nillable="true" type="tns:PayRecord" />
+</xs:schema>

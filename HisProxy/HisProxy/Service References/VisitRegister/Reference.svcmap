@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7d238d71-bc3d-4c8b-b9be-5d9427ef3522" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VisitRegister.wsdl" MetadataType="Wsdl" ID="0cd0a44c-667b-4390-a577-99db67c1536b" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?wsdl" />
+    <MetadataFile FileName="VisitRegister.xsd" MetadataType="Schema" ID="922b77a8-d458-49e9-9739-99fc249ea3fe" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd8" />
+    <MetadataFile FileName="VisitRegister1.xsd" MetadataType="Schema" ID="7b23bd33-69ad-49e7-b801-180f230a2931" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd1" />
+    <MetadataFile FileName="VisitRegister2.xsd" MetadataType="Schema" ID="43b8fa2c-1184-4daf-958e-45640aaa22a5" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd0" />
+    <MetadataFile FileName="VisitRegister3.xsd" MetadataType="Schema" ID="18728184-9ab0-46a9-a699-c2b37b6313f8" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd3" />
+    <MetadataFile FileName="VisitRegister4.xsd" MetadataType="Schema" ID="eae2b336-cf7c-43d4-9e4d-9e17e7715ecb" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd2" />
+    <MetadataFile FileName="VisitRegister5.xsd" MetadataType="Schema" ID="94e4a088-5d66-4a75-a2f6-f5f91f5a1293" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd5" />
+    <MetadataFile FileName="VisitRegister6.xsd" MetadataType="Schema" ID="c8389fdf-5579-4c38-b55d-1b47069246e1" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd4" />
+    <MetadataFile FileName="VisitRegister7.xsd" MetadataType="Schema" ID="a98d8232-3717-4a22-ae8b-49b441cd75a0" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd7" />
+    <MetadataFile FileName="VisitRegister8.xsd" MetadataType="Schema" ID="5635033d-c081-487f-84d3-818ca851e58f" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/VisitRegister/VisitRegister.svc?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

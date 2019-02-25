@@ -1,0 +1,7 @@
+E:\GitHubCode\CreaterAndCustum\ConcurrentQueue\bin\Debug\ConcurrentQueue.exe.config
+E:\GitHubCode\CreaterAndCustum\ConcurrentQueue\bin\Debug\ConcurrentQueue.exe
+E:\GitHubCode\CreaterAndCustum\ConcurrentQueue\bin\Debug\ConcurrentQueue.pdb
+E:\GitHubCode\CreaterAndCustum\ConcurrentQueue\obj\Debug\ConcurrentQueue.csprojAssemblyReference.cache
+E:\GitHubCode\CreaterAndCustum\ConcurrentQueue\obj\Debug\ConcurrentQueue.csproj.CoreCompileInputs.cache
+E:\GitHubCode\CreaterAndCustum\ConcurrentQueue\obj\Debug\ConcurrentQueue.exe
+E:\GitHubCode\CreaterAndCustum\ConcurrentQueue\obj\Debug\ConcurrentQueue.pdb

@@ -1,0 +1,14 @@
+D:\Code\RedisTest\RedisTest\bin\Debug\RedisTest.exe.config
+D:\Code\RedisTest\RedisTest\bin\Debug\RedisTest.exe
+D:\Code\RedisTest\RedisTest\bin\Debug\RedisTest.pdb
+D:\Code\RedisTest\RedisTest\bin\Debug\ServiceStack.Common.dll
+D:\Code\RedisTest\RedisTest\bin\Debug\ServiceStack.dll
+D:\Code\RedisTest\RedisTest\bin\Debug\ServiceStack.Interfaces.dll
+D:\Code\RedisTest\RedisTest\bin\Debug\ServiceStack.OrmLite.dll
+D:\Code\RedisTest\RedisTest\bin\Debug\ServiceStack.OrmLite.SqlServer.dll
+D:\Code\RedisTest\RedisTest\bin\Debug\ServiceStack.Redis.dll
+D:\Code\RedisTest\RedisTest\bin\Debug\ServiceStack.ServiceInterface.dll
+D:\Code\RedisTest\RedisTest\bin\Debug\ServiceStack.Text.dll
+D:\Code\RedisTest\RedisTest\obj\Debug\RedisTest.csprojResolveAssemblyReference.cache
+D:\Code\RedisTest\RedisTest\obj\Debug\RedisTest.exe
+D:\Code\RedisTest\RedisTest\obj\Debug\RedisTest.pdb

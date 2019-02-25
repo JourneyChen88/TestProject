@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HisService.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HisService.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="OpdEmgPrescription">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AuditTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="AuditUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChartNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DrNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExecDivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:long" />
+      <xs:element minOccurs="0" name="IsAudited" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsCharged" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsInfusion" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PrescQty" type="xs:int" />
+      <xs:element minOccurs="0" name="PrescType" type="xs:int" />
+      <xs:element minOccurs="0" name="RecordTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SpecialTag" type="xs:int" />
+      <xs:element minOccurs="0" name="VisitNo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OpdEmgPrescription" nillable="true" type="tns:OpdEmgPrescription" />
+  <xs:complexType name="OpdEmgPrescriptionDt">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CancelTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CancelUser" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Dose" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DoseUnit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:long" />
+      <xs:element minOccurs="0" name="IsCancel" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ItemCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LargeItemCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OpdEmgPrescriptionId" type="xs:long" />
+      <xs:element minOccurs="0" name="Price" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Qty" type="xs:int" />
+      <xs:element minOccurs="0" name="Spec" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnitRotio" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="UsageNo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OpdEmgPrescriptionDt" nillable="true" type="tns:OpdEmgPrescriptionDt" />
+  <xs:complexType name="MedCodeSetDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Days" type="xs:short" />
+      <xs:element minOccurs="0" name="Dose" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DoseUnit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExecDivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsChecked" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ItemCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Keyword1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Keyword2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Price" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Qty" type="xs:int" />
+      <xs:element minOccurs="0" name="UnitRotio" type="xs:decimal" />
+      <xs:element minOccurs="0" name="UsageNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WayNo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MedCodeSetDto" nillable="true" type="tns:MedCodeSetDto" />
+  <xs:complexType name="ArrayOfMedCodeSetDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MedCodeSetDto" nillable="true" type="tns:MedCodeSetDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMedCodeSetDto" nillable="true" type="tns:ArrayOfMedCodeSetDto" />
+  <xs:complexType name="ArrayOfChargeRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ChargeRecord" nillable="true" type="tns:ChargeRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfChargeRecord" nillable="true" type="tns:ArrayOfChargeRecord" />
+  <xs:complexType name="ChargeRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Batch" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChargeTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ChargeUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChartNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ConfirmTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ConfirmUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExecDivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:long" />
+      <xs:element minOccurs="0" name="InvoiceNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsCharged" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsConfirm" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ItemCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OpenDivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayRecordNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrescId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrescQty" type="xs:int" />
+      <xs:element minOccurs="0" name="PrescType" type="xs:int" />
+      <xs:element minOccurs="0" name="Price" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Qty" type="xs:int" />
+      <xs:element minOccurs="0" name="Unit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnitRotio" type="xs:decimal" />
+      <xs:element minOccurs="0" name="VisitNo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChargeRecord" nillable="true" type="tns:ChargeRecord" />
+  <xs:complexType name="InvoiceRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActuallyPay" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AttachPay" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CacheClassSelfPay" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CacheSelfPay" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CardNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChargeTypeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChartNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Deviation" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DiscountFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID" type="xs:long" />
+      <xs:element minOccurs="0" name="InvoiceNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceType" type="xs:int" />
+      <xs:element minOccurs="0" name="IsPrinted" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsRefunded" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MedicareCoPay" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PersonalAccountPay" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RefundTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RefundUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SelfPay" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SumFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="UpdatedTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedUser" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvoiceRecord" nillable="true" type="tns:InvoiceRecord" />
+  <xs:complexType name="PayRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActualPay" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CardNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Change" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ChargeDivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChargeTypeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChartNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DealStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="DiscountPay" type="xs:decimal" />
+      <xs:element minOccurs="0" name="InvoiceNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceType" type="xs:int" />
+      <xs:element minOccurs="0" name="MedicareCenterNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MedicareDealNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MedicarePay" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PatientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PayMethodCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayRecordNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="RecordTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RecordUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RefundNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rounding" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PayRecord" nillable="true" type="tns:PayRecord" />
+</xs:schema>

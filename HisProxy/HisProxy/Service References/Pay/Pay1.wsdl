@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Pay" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/HisService.Entity" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/HisService.Pay" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/HisService.Pay.Input" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc?xsd=xsd6" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPay_GetCurrentPayRecordNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentPayRecordNo" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetCurrentPayRecordNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentPayRecordNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_AddOpdEmgPrescription_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddOpdEmgPrescription" />
+  </wsdl:message>
+  <wsdl:message name="IPay_AddOpdEmgPrescription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddOpdEmgPrescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetOpdEmgPrescriptionByVisitNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpdEmgPrescriptionByVisitNo" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetOpdEmgPrescriptionByVisitNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpdEmgPrescriptionByVisitNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_AddMedCodePackage_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddMedCodePackage" />
+  </wsdl:message>
+  <wsdl:message name="IPay_AddMedCodePackage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddMedCodePackageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetMedCodeSetAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMedCodeSetAll" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetMedCodeSetAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMedCodeSetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPackageAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPackageAll" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPackageAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPackageAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_InsertPackageDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPackageDetail" />
+  </wsdl:message>
+  <wsdl:message name="IPay_InsertPackageDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPackageDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPackageDetailByPackageCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPackageDetailByPackageCode" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPackageDetailByPackageCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPackageDetailByPackageCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_AddCharge_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCharge" />
+  </wsdl:message>
+  <wsdl:message name="IPay_AddCharge_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddChargeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_RefundCharge_InputMessage">
+    <wsdl:part name="parameters" element="tns:RefundCharge" />
+  </wsdl:message>
+  <wsdl:message name="IPay_RefundCharge_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RefundChargeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_ComfirmChargeRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:ComfirmChargeRecord" />
+  </wsdl:message>
+  <wsdl:message name="IPay_ComfirmChargeRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ComfirmChargeRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetChargeRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetChargeRecord" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetChargeRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetChargeRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetChargeRecordByInvoiceNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetChargeRecordByInvoiceNo" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetChargeRecordByInvoiceNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetChargeRecordByInvoiceNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPatientPrescriptionByVisitNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientPrescriptionByVisitNo" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPatientPrescriptionByVisitNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientPrescriptionByVisitNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_InvoiceRefund_InputMessage">
+    <wsdl:part name="parameters" element="tns:InvoiceRefund" />
+  </wsdl:message>
+  <wsdl:message name="IPay_InvoiceRefund_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InvoiceRefundResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetIfxPayNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIfxPayNo" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetIfxPayNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIfxPayNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPayMtByVisitNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayMtByVisitNo" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPayMtByVisitNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayMtByVisitNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPayMtByPayNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayMtByPayNo" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPayMtByPayNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayMtByPayNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPayRecordByVisitNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayRecordByVisitNo" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPayRecordByVisitNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayRecordByVisitNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_AppendMedCharge2_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppendMedCharge2" />
+  </wsdl:message>
+  <wsdl:message name="IPay_AppendMedCharge2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppendMedCharge2Response" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetMedChargeByVisitNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMedChargeByVisitNo" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetMedChargeByVisitNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMedChargeByVisitNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetEmpCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpCode" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetEmpCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetVisitRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitRecord" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetVisitRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetFeeTypeSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeeTypeSet" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetFeeTypeSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeeTypeSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetEmpName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpName" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetEmpName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetEmpInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpInfo" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetEmpInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetMedCodeSetByItemCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMedCodeSetByItemCode" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetMedCodeSetByItemCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMedCodeSetByItemCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_CheckUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUser" />
+  </wsdl:message>
+  <wsdl:message name="IPay_CheckUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetDebtRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDebtRecord" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetDebtRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDebtRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetMedItemInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMedItemInfo" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetMedItemInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMedItemInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_CancelPayMt_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelPayMt" />
+  </wsdl:message>
+  <wsdl:message name="IPay_CancelPayMt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelPayMtResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_ModifyPayRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPayRecord" />
+  </wsdl:message>
+  <wsdl:message name="IPay_ModifyPayRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPayRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPayData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayData" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPayData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPayMtByChartNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayMtByChartNo" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPayMtByChartNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayMtByChartNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPayMtByChartNo2_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayMtByChartNo2" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPayMtByChartNo2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayMtByChartNo2Response" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPayRecordByPayNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayRecordByPayNo" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPayRecordByPayNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayRecordByPayNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetCheeMar_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCheeMar" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetCheeMar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCheeMarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetOutPatient_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatient" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetOutPatient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutPatientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPayDtByPayNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayDtByPayNo" />
+  </wsdl:message>
+  <wsdl:message name="IPay_GetPayDtByPayNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayDtByPayNoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPay">
+    <wsdl:operation name="GetCurrentPayRecordNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetCurrentPayRecordNo" message="tns:IPay_GetCurrentPayRecordNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetCurrentPayRecordNoResponse" message="tns:IPay_GetCurrentPayRecordNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOpdEmgPrescription">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/AddOpdEmgPrescription" message="tns:IPay_AddOpdEmgPrescription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/AddOpdEmgPrescriptionResponse" message="tns:IPay_AddOpdEmgPrescription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOpdEmgPrescriptionByVisitNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetOpdEmgPrescriptionByVisitNo" message="tns:IPay_GetOpdEmgPrescriptionByVisitNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetOpdEmgPrescriptionByVisitNoResponse" message="tns:IPay_GetOpdEmgPrescriptionByVisitNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMedCodePackage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/AddMedCodePackage" message="tns:IPay_AddMedCodePackage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/AddMedCodePackageResponse" message="tns:IPay_AddMedCodePackage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMedCodeSetAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetMedCodeSetAll" message="tns:IPay_GetMedCodeSetAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetMedCodeSetAllResponse" message="tns:IPay_GetMedCodeSetAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPackageAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetPackageAll" message="tns:IPay_GetPackageAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetPackageAllResponse" message="tns:IPay_GetPackageAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPackageDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/InsertPackageDetail" message="tns:IPay_InsertPackageDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/InsertPackageDetailResponse" message="tns:IPay_InsertPackageDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPackageDetailByPackageCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetPackageDetailByPackageCode" message="tns:IPay_GetPackageDetailByPackageCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetPackageDetailByPackageCodeResponse" message="tns:IPay_GetPackageDetailByPackageCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCharge">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/AddCharge" message="tns:IPay_AddCharge_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/AddChargeResponse" message="tns:IPay_AddCharge_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RefundCharge">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/RefundCharge" message="tns:IPay_RefundCharge_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/RefundChargeResponse" message="tns:IPay_RefundCharge_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ComfirmChargeRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/ComfirmChargeRecord" message="tns:IPay_ComfirmChargeRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/ComfirmChargeRecordResponse" message="tns:IPay_ComfirmChargeRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChargeRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetChargeRecord" message="tns:IPay_GetChargeRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetChargeRecordResponse" message="tns:IPay_GetChargeRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChargeRecordByInvoiceNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetChargeRecordByInvoiceNo" message="tns:IPay_GetChargeRecordByInvoiceNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetChargeRecordByInvoiceNoResponse" message="tns:IPay_GetChargeRecordByInvoiceNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientPrescriptionByVisitNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetPatientPrescriptionByVisitNo" message="tns:IPay_GetPatientPrescriptionByVisitNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetPatientPrescriptionByVisitNoResponse" message="tns:IPay_GetPatientPrescriptionByVisitNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InvoiceRefund">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/InvoiceRefund" message="tns:IPay_InvoiceRefund_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/InvoiceRefundResponse" message="tns:IPay_InvoiceRefund_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIfxPayNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetIfxPayNo" message="tns:IPay_GetIfxPayNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetIfxPayNoResponse" message="tns:IPay_GetIfxPayNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayMtByVisitNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetPayMtByVisitNo" message="tns:IPay_GetPayMtByVisitNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetPayMtByVisitNoResponse" message="tns:IPay_GetPayMtByVisitNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayMtByPayNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetPayMtByPayNo" message="tns:IPay_GetPayMtByPayNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetPayMtByPayNoResponse" message="tns:IPay_GetPayMtByPayNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayRecordByVisitNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetPayRecordByVisitNo" message="tns:IPay_GetPayRecordByVisitNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetPayRecordByVisitNoResponse" message="tns:IPay_GetPayRecordByVisitNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppendMedCharge2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/AppendMedCharge2" message="tns:IPay_AppendMedCharge2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/AppendMedCharge2Response" message="tns:IPay_AppendMedCharge2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMedChargeByVisitNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetMedChargeByVisitNo" message="tns:IPay_GetMedChargeByVisitNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetMedChargeByVisitNoResponse" message="tns:IPay_GetMedChargeByVisitNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetEmpCode" message="tns:IPay_GetEmpCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetEmpCodeResponse" message="tns:IPay_GetEmpCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetVisitRecord" message="tns:IPay_GetVisitRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetVisitRecordResponse" message="tns:IPay_GetVisitRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeeTypeSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetFeeTypeSet" message="tns:IPay_GetFeeTypeSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetFeeTypeSetResponse" message="tns:IPay_GetFeeTypeSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetEmpName" message="tns:IPay_GetEmpName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetEmpNameResponse" message="tns:IPay_GetEmpName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetEmpInfo" message="tns:IPay_GetEmpInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetEmpInfoResponse" message="tns:IPay_GetEmpInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMedCodeSetByItemCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetMedCodeSetByItemCode" message="tns:IPay_GetMedCodeSetByItemCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetMedCodeSetByItemCodeResponse" message="tns:IPay_GetMedCodeSetByItemCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/CheckUser" message="tns:IPay_CheckUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/CheckUserResponse" message="tns:IPay_CheckUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDebtRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetDebtRecord" message="tns:IPay_GetDebtRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetDebtRecordResponse" message="tns:IPay_GetDebtRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMedItemInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetMedItemInfo" message="tns:IPay_GetMedItemInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetMedItemInfoResponse" message="tns:IPay_GetMedItemInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelPayMt">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/CancelPayMt" message="tns:IPay_CancelPayMt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/CancelPayMtResponse" message="tns:IPay_CancelPayMt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPayRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/ModifyPayRecord" message="tns:IPay_ModifyPayRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/ModifyPayRecordResponse" message="tns:IPay_ModifyPayRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetPayData" message="tns:IPay_GetPayData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetPayDataResponse" message="tns:IPay_GetPayData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayMtByChartNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetPayMtByChartNo" message="tns:IPay_GetPayMtByChartNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetPayMtByChartNoResponse" message="tns:IPay_GetPayMtByChartNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayMtByChartNo2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetPayMtByChartNo2" message="tns:IPay_GetPayMtByChartNo2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetPayMtByChartNo2Response" message="tns:IPay_GetPayMtByChartNo2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayRecordByPayNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetPayRecordByPayNo" message="tns:IPay_GetPayRecordByPayNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetPayRecordByPayNoResponse" message="tns:IPay_GetPayRecordByPayNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCheeMar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetCheeMar" message="tns:IPay_GetCheeMar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetCheeMarResponse" message="tns:IPay_GetCheeMar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetOutPatient" message="tns:IPay_GetOutPatient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetOutPatientResponse" message="tns:IPay_GetOutPatient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayDtByPayNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPay/GetPayDtByPayNo" message="tns:IPay_GetPayDtByPayNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPay/GetPayDtByPayNoResponse" message="tns:IPay_GetPayDtByPayNo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Pay" type="tns:IPay">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCurrentPayRecordNo">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetCurrentPayRecordNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOpdEmgPrescription">
+      <soap:operation soapAction="http://tempuri.org/IPay/AddOpdEmgPrescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpdEmgPrescriptionByVisitNo">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetOpdEmgPrescriptionByVisitNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMedCodePackage">
+      <soap:operation soapAction="http://tempuri.org/IPay/AddMedCodePackage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMedCodeSetAll">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetMedCodeSetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPackageAll">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetPackageAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPackageDetail">
+      <soap:operation soapAction="http://tempuri.org/IPay/InsertPackageDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPackageDetailByPackageCode">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetPackageDetailByPackageCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCharge">
+      <soap:operation soapAction="http://tempuri.org/IPay/AddCharge" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefundCharge">
+      <soap:operation soapAction="http://tempuri.org/IPay/RefundCharge" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ComfirmChargeRecord">
+      <soap:operation soapAction="http://tempuri.org/IPay/ComfirmChargeRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChargeRecord">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetChargeRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChargeRecordByInvoiceNo">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetChargeRecordByInvoiceNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPatientPrescriptionByVisitNo">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetPatientPrescriptionByVisitNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvoiceRefund">
+      <soap:operation soapAction="http://tempuri.org/IPay/InvoiceRefund" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIfxPayNo">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetIfxPayNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPayMtByVisitNo">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetPayMtByVisitNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPayMtByPayNo">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetPayMtByPayNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPayRecordByVisitNo">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetPayRecordByVisitNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AppendMedCharge2">
+      <soap:operation soapAction="http://tempuri.org/IPay/AppendMedCharge2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMedChargeByVisitNo">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetMedChargeByVisitNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpCode">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetEmpCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitRecord">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetVisitRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeeTypeSet">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetFeeTypeSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpName">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetEmpName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpInfo">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetEmpInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMedCodeSetByItemCode">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetMedCodeSetByItemCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUser">
+      <soap:operation soapAction="http://tempuri.org/IPay/CheckUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDebtRecord">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetDebtRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMedItemInfo">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetMedItemInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelPayMt">
+      <soap:operation soapAction="http://tempuri.org/IPay/CancelPayMt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPayRecord">
+      <soap:operation soapAction="http://tempuri.org/IPay/ModifyPayRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPayData">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetPayData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPayMtByChartNo">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetPayMtByChartNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPayMtByChartNo2">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetPayMtByChartNo2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPayRecordByPayNo">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetPayRecordByPayNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCheeMar">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetCheeMar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutPatient">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetOutPatient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPayDtByPayNo">
+      <soap:operation soapAction="http://tempuri.org/IPay/GetPayDtByPayNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Pay">
+    <wsdl:port name="Pay" binding="tns:Pay">
+      <soap:address location="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

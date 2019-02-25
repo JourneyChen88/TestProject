@@ -1,0 +1,10 @@
+E:\GitHubCode\Donghua\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\GitHubCode\Donghua\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\GitHubCode\Donghua\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\GitHubCode\Donghua\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+E:\GitHubCode\Donghua\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\GitHubCode\Donghua\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\GitHubCode\Donghua\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\GitHubCode\Donghua\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\GitHubCode\Donghua\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\GitHubCode\Donghua\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

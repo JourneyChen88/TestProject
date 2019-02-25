@@ -1,0 +1,2 @@
+regsvr32 Interop.MedicareComLib.dll
+pause

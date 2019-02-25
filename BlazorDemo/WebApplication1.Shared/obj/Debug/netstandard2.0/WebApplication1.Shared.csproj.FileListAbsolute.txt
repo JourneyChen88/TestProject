@@ -1,0 +1,9 @@
+E:\GitHubCode\BlazorDemo\WebApplication1.Shared\bin\Debug\netstandard2.0\WebApplication1.Shared.deps.json
+E:\GitHubCode\BlazorDemo\WebApplication1.Shared\bin\Debug\netstandard2.0\WebApplication1.Shared.dll
+E:\GitHubCode\BlazorDemo\WebApplication1.Shared\bin\Debug\netstandard2.0\WebApplication1.Shared.pdb
+E:\GitHubCode\BlazorDemo\WebApplication1.Shared\obj\Debug\netstandard2.0\WebApplication1.Shared.csprojAssemblyReference.cache
+E:\GitHubCode\BlazorDemo\WebApplication1.Shared\obj\Debug\netstandard2.0\WebApplication1.Shared.csproj.CoreCompileInputs.cache
+E:\GitHubCode\BlazorDemo\WebApplication1.Shared\obj\Debug\netstandard2.0\WebApplication1.Shared.AssemblyInfoInputs.cache
+E:\GitHubCode\BlazorDemo\WebApplication1.Shared\obj\Debug\netstandard2.0\WebApplication1.Shared.AssemblyInfo.cs
+E:\GitHubCode\BlazorDemo\WebApplication1.Shared\obj\Debug\netstandard2.0\WebApplication1.Shared.dll
+E:\GitHubCode\BlazorDemo\WebApplication1.Shared\obj\Debug\netstandard2.0\WebApplication1.Shared.pdb

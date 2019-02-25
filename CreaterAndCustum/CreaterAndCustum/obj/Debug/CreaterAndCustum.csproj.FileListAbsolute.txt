@@ -1,0 +1,7 @@
+E:\GitHubCode\CreaterAndCustum\CreaterAndCustum\bin\Debug\CreaterAndCustum.exe.config
+E:\GitHubCode\CreaterAndCustum\CreaterAndCustum\bin\Debug\CreaterAndCustum.exe
+E:\GitHubCode\CreaterAndCustum\CreaterAndCustum\bin\Debug\CreaterAndCustum.pdb
+E:\GitHubCode\CreaterAndCustum\CreaterAndCustum\obj\Debug\CreaterAndCustum.csprojAssemblyReference.cache
+E:\GitHubCode\CreaterAndCustum\CreaterAndCustum\obj\Debug\CreaterAndCustum.csproj.CoreCompileInputs.cache
+E:\GitHubCode\CreaterAndCustum\CreaterAndCustum\obj\Debug\CreaterAndCustum.exe
+E:\GitHubCode\CreaterAndCustum\CreaterAndCustum\obj\Debug\CreaterAndCustum.pdb

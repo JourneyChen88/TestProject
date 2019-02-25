@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HisService.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HisService.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfRegisterNumber">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RegisterNumber" nillable="true" type="tns:RegisterNumber" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRegisterNumber" nillable="true" type="tns:ArrayOfRegisterNumber" />
+  <xs:complexType name="RegisterNumber">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NumberMark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumberType" type="xs:short" />
+      <xs:element minOccurs="0" name="TypeDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdateUser" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegisterNumber" nillable="true" type="tns:RegisterNumber" />
+  <xs:complexType name="ArrayOfVisitScheduleDt">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VisitScheduleDt" nillable="true" type="tns:VisitScheduleDt" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVisitScheduleDt" nillable="true" type="tns:ArrayOfVisitScheduleDt" />
+  <xs:complexType name="VisitScheduleDt">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrDrNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:long" />
+      <xs:element minOccurs="0" name="IsPreorder" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MaxSeqNo" type="xs:int" />
+      <xs:element minOccurs="0" name="MedicalFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NumberMark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ScheduleNo" type="xs:long" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdateUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisitDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="VisitLevel" type="xs:int" />
+      <xs:element minOccurs="0" name="VisitLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisitMark" type="xs:int" />
+      <xs:element minOccurs="0" name="VisitSction" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VisitScheduleDt" nillable="true" type="tns:VisitScheduleDt" />
+</xs:schema>

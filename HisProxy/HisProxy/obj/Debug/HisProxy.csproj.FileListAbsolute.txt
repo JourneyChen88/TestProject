@@ -1,0 +1,10 @@
+E:\GitHubCode\HisProxy\HisProxy\bin\Debug\HisProxy.exe.config
+E:\GitHubCode\HisProxy\HisProxy\bin\Debug\HisProxy.exe
+E:\GitHubCode\HisProxy\HisProxy\bin\Debug\HisProxy.pdb
+E:\GitHubCode\HisProxy\HisProxy\obj\Debug\HisProxy.csprojAssemblyReference.cache
+E:\GitHubCode\HisProxy\HisProxy\obj\Debug\HisProxy.Form1.resources
+E:\GitHubCode\HisProxy\HisProxy\obj\Debug\HisProxy.Properties.Resources.resources
+E:\GitHubCode\HisProxy\HisProxy\obj\Debug\HisProxy.csproj.GenerateResource.cache
+E:\GitHubCode\HisProxy\HisProxy\obj\Debug\HisProxy.csproj.CoreCompileInputs.cache
+E:\GitHubCode\HisProxy\HisProxy\obj\Debug\HisProxy.exe
+E:\GitHubCode\HisProxy\HisProxy\obj\Debug\HisProxy.pdb

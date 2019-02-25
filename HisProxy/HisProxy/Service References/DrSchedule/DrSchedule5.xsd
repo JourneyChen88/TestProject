@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://cn-20190104ylbs/SIHIS/DrSchedule/DrSchedule.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" />
+  <xs:import schemaLocation="http://cn-20190104ylbs/SIHIS/DrSchedule/DrSchedule.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/HisService.Entity" />
+  <xs:element name="GetDivRegScheduleByVisitType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisitType" nillable="true" type="xs:anyType" />
+        <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:anyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDivRegScheduleByVisitTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetDivRegScheduleByVisitTypeResult" nillable="true" type="q1:ArrayOfDivRegScheduleDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddDivRegSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="entity" nillable="true" type="q2:DivRegScheduleDto" />
+        <xs:element minOccurs="0" name="FirstDay" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="circle" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddDivRegScheduleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddDivRegScheduleResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDivRegSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="entity" nillable="true" type="q3:DivRegScheduleDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDivRegScheduleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateDivRegScheduleResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDivisionByDivCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DivCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDivisionByDivCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetDivisionByDivCodeResult" nillable="true" type="q4:ArrayOfDivisionDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDivsionByDivNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DivCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDivsionByDivNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetDivsionByDivNoResult" nillable="true" type="q5:ArrayOfDivisionDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDivsionAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDivsionAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetDivsionAllResult" nillable="true" type="q6:ArrayOfDivisionOutOut" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrInfoListByDivNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrInfoListByDivNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetDrInfoListByDivNoResult" nillable="true" type="q7:ArrayOfDoctorOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoomByRoomNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RoomNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoomByRoomNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetRoomByRoomNoResult" nillable="true" type="q8:ArrayOfRoomOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoomByRoomCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RoomCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoomByRoomCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetRoomByRoomCodeResult" nillable="true" type="q9:ArrayOfRoomOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoomAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoomAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetRoomAllResult" nillable="true" type="q10:ArrayOfRoomOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoomByDivNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoomByDivNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetRoomByDivNoResult" nillable="true" type="q11:ArrayOfRoomOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrVisitScheduleMtListByDrNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="zone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DrNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrVisitScheduleMtListByDrNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetDrVisitScheduleMtListByDrNoResult" nillable="true" type="q12:ArrayOfVisitScheduleOutPut" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRegNumAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRegNumAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/HisService.Entity" minOccurs="0" name="GetRegNumAllResult" nillable="true" type="q13:ArrayOfRegisterNumber" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpByDrCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DrCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpByDrCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetEmpByDrCodeResult" nillable="true" type="q14:ArrayOfEmployeeOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpByDrNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DrNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmpByDrNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetEmpByDrNoResult" nillable="true" type="q15:ArrayOfEmployeeOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrVisitScheduleMtByScheduleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ScheduleNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrVisitScheduleMtByScheduleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetDrVisitScheduleMtByScheduleIdResult" nillable="true" type="q16:ArrayOfVisitScheduleOutPut" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrScheduleDtByScheduleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ScheduleNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrScheduleDtByScheduleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/HisService.Entity" minOccurs="0" name="GetDrScheduleDtByScheduleIdResult" nillable="true" type="q17:ArrayOfVisitScheduleDt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDiviSionDrByEmpCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmpCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDiviSionDrByEmpCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetDiviSionDrByEmpCodeResult" nillable="true" type="q18:ArrayOfEmployeeOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDivScheduleByDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="date" nillable="true" type="xs:anyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDivScheduleByDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetDivScheduleByDateResult" nillable="true" type="q19:ArrayOfScheduleOutPut" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMasterScheduleByDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="date" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMasterScheduleByDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetMasterScheduleByDateResult" nillable="true" type="q20:ArrayOfScheduleOutPut" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsRoomUsing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="input" nillable="true" type="q21:GetVisitScheduleInput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsRoomUsingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsRoomUsingResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVisitScheduleMt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="input" nillable="true" type="q22:VisitSheduleInput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVisitScheduleMtResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetVisitScheduleMtResult" nillable="true" type="q23:VisitScheduleMtDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrDtListByDrSchDtNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ScheduleNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VisitDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrDtListByDrSchDtNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetDrDtListByDrSchDtNoResult" nillable="true" type="q24:ArrayOfDrSheduleOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVisitRescordList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="DrNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVisitRescordListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetVisitRescordListResult" nillable="true" type="q25:ArrayOfVisitRescordOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrScheduleDtByDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CurrDrNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrScheduleDtByDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetDrScheduleDtByDateResult" nillable="true" type="q26:ArrayOfDrSheduleOutput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertVisitRestRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="dto" nillable="true" type="q27:VisitRestRecordDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertVisitRestRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertVisitRestRecordResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertVisitScheduleMt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="dto" nillable="true" type="q28:VisitScheduleMtDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertVisitScheduleMtResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertVisitScheduleMtResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdteVisitScheduleMt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="dto" nillable="true" type="q29:VisitScheduleMtDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdteVisitScheduleMtResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdteVisitScheduleMtResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateVisitDrSchDt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ot" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateVisitDrSchDtResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateVisitDrSchDtResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateVisitRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="ot" nillable="true" type="q30:VisitRestRecordDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateVisitRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateVisitRecordResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelVisitRestRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="input" nillable="true" type="q31:DelVisitRestRecordInput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelVisitRestRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DelVisitRestRecordResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDrSchDtFromVisitRest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="input" nillable="true" type="q32:UpdateDrSchDtInput" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDrSchDtFromVisitRestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateDrSchDtFromVisitRestResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrVisitSchMtListByRoomNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RoomNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrVisitSchMtListByRoomNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetDrVisitSchMtListByRoomNoResult" nillable="true" type="q33:ArrayOfVisitScheduleOutPut" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVisitLevelSetByLevelCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LevelCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVisitLevelSetByLevelCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="GetVisitLevelSetByLevelCodeResult" nillable="true" type="q34:ArrayOfVisitLevelSetDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryDrScheduleDtByDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmpCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryDrScheduleDtByDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="QueryDrScheduleDtByDateResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryVisitRecordbyDrCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DrCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryVisitRecordbyDrCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="QueryVisitRecordbyDrCodeResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryProductbyItemCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ItemCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryProductbyItemCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="QueryProductbyItemCodeResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryVisit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VisitDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VisitSction" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RoomNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryVisitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="QueryVisitResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDrSchMt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" minOccurs="0" name="dto" nillable="true" type="q35:VisitScheduleMtDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDrSchMtResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetDrSchMtResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

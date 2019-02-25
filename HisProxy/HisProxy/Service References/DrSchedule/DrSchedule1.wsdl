@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DrSchedule" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/DrSchedule/DrSchedule.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/DrSchedule/DrSchedule.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/DrSchedule/DrSchedule.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/DrSchedule/DrSchedule.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/HisService.Entity" />
+      <xsd:import schemaLocation="http://cn-20190104ylbs/SIHIS/DrSchedule/DrSchedule.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDrSchedule_GetDivRegScheduleByVisitType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivRegScheduleByVisitType" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDivRegScheduleByVisitType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivRegScheduleByVisitTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_AddDivRegSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddDivRegSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_AddDivRegSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDivRegScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_UpdateDivRegSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDivRegSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_UpdateDivRegSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDivRegScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDivisionByDivCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivisionByDivCode" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDivisionByDivCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivisionByDivCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDivsionByDivNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivsionByDivNo" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDivsionByDivNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivsionByDivNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDivsionAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivsionAll" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDivsionAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivsionAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDrInfoListByDivNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrInfoListByDivNo" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDrInfoListByDivNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrInfoListByDivNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetRoomByRoomNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoomByRoomNo" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetRoomByRoomNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoomByRoomNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetRoomByRoomCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoomByRoomCode" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetRoomByRoomCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoomByRoomCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetRoomAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoomAll" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetRoomAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoomAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetRoomByDivNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoomByDivNo" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetRoomByDivNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoomByDivNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDrVisitScheduleMtListByDrNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrVisitScheduleMtListByDrNo" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDrVisitScheduleMtListByDrNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrVisitScheduleMtListByDrNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetRegNumAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegNumAll" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetRegNumAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegNumAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetEmpByDrCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpByDrCode" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetEmpByDrCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpByDrCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetEmpByDrNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpByDrNo" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetEmpByDrNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmpByDrNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDrVisitScheduleMtByScheduleId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrVisitScheduleMtByScheduleId" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDrVisitScheduleMtByScheduleId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrVisitScheduleMtByScheduleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDrScheduleDtByScheduleId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrScheduleDtByScheduleId" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDrScheduleDtByScheduleId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrScheduleDtByScheduleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDiviSionDrByEmpCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiviSionDrByEmpCode" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDiviSionDrByEmpCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiviSionDrByEmpCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDivScheduleByDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivScheduleByDate" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDivScheduleByDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivScheduleByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetMasterScheduleByDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMasterScheduleByDate" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetMasterScheduleByDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMasterScheduleByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_IsRoomUsing_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsRoomUsing" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_IsRoomUsing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsRoomUsingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetVisitScheduleMt_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitScheduleMt" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetVisitScheduleMt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitScheduleMtResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDrDtListByDrSchDtNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrDtListByDrSchDtNo" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDrDtListByDrSchDtNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrDtListByDrSchDtNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetVisitRescordList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitRescordList" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetVisitRescordList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitRescordListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDrScheduleDtByDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrScheduleDtByDate" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDrScheduleDtByDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrScheduleDtByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_InsertVisitRestRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertVisitRestRecord" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_InsertVisitRestRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertVisitRestRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_InsertVisitScheduleMt_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertVisitScheduleMt" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_InsertVisitScheduleMt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertVisitScheduleMtResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_UpdteVisitScheduleMt_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdteVisitScheduleMt" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_UpdteVisitScheduleMt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdteVisitScheduleMtResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_UpdateVisitDrSchDt_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVisitDrSchDt" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_UpdateVisitDrSchDt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVisitDrSchDtResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_UpdateVisitRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVisitRecord" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_UpdateVisitRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVisitRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_DelVisitRestRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:DelVisitRestRecord" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_DelVisitRestRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DelVisitRestRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_UpdateDrSchDtFromVisitRest_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDrSchDtFromVisitRest" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_UpdateDrSchDtFromVisitRest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDrSchDtFromVisitRestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDrVisitSchMtListByRoomNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrVisitSchMtListByRoomNo" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetDrVisitSchMtListByRoomNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrVisitSchMtListByRoomNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetVisitLevelSetByLevelCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitLevelSetByLevelCode" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_GetVisitLevelSetByLevelCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitLevelSetByLevelCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_QueryDrScheduleDtByDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryDrScheduleDtByDate" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_QueryDrScheduleDtByDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryDrScheduleDtByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_QueryVisitRecordbyDrCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryVisitRecordbyDrCode" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_QueryVisitRecordbyDrCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryVisitRecordbyDrCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_QueryProductbyItemCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryProductbyItemCode" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_QueryProductbyItemCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryProductbyItemCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_QueryVisit_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryVisit" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_QueryVisit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryVisitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_SetDrSchMt_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDrSchMt" />
+  </wsdl:message>
+  <wsdl:message name="IDrSchedule_SetDrSchMt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDrSchMtResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDrSchedule">
+    <wsdl:operation name="GetDivRegScheduleByVisitType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetDivRegScheduleByVisitType" message="tns:IDrSchedule_GetDivRegScheduleByVisitType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetDivRegScheduleByVisitTypeResponse" message="tns:IDrSchedule_GetDivRegScheduleByVisitType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDivRegSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/AddDivRegSchedule" message="tns:IDrSchedule_AddDivRegSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/AddDivRegScheduleResponse" message="tns:IDrSchedule_AddDivRegSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDivRegSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/UpdateDivRegSchedule" message="tns:IDrSchedule_UpdateDivRegSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/UpdateDivRegScheduleResponse" message="tns:IDrSchedule_UpdateDivRegSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDivisionByDivCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetDivisionByDivCode" message="tns:IDrSchedule_GetDivisionByDivCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetDivisionByDivCodeResponse" message="tns:IDrSchedule_GetDivisionByDivCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDivsionByDivNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetDivsionByDivNo" message="tns:IDrSchedule_GetDivsionByDivNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetDivsionByDivNoResponse" message="tns:IDrSchedule_GetDivsionByDivNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDivsionAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetDivsionAll" message="tns:IDrSchedule_GetDivsionAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetDivsionAllResponse" message="tns:IDrSchedule_GetDivsionAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrInfoListByDivNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetDrInfoListByDivNo" message="tns:IDrSchedule_GetDrInfoListByDivNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetDrInfoListByDivNoResponse" message="tns:IDrSchedule_GetDrInfoListByDivNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoomByRoomNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetRoomByRoomNo" message="tns:IDrSchedule_GetRoomByRoomNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetRoomByRoomNoResponse" message="tns:IDrSchedule_GetRoomByRoomNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoomByRoomCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetRoomByRoomCode" message="tns:IDrSchedule_GetRoomByRoomCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetRoomByRoomCodeResponse" message="tns:IDrSchedule_GetRoomByRoomCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoomAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetRoomAll" message="tns:IDrSchedule_GetRoomAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetRoomAllResponse" message="tns:IDrSchedule_GetRoomAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoomByDivNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetRoomByDivNo" message="tns:IDrSchedule_GetRoomByDivNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetRoomByDivNoResponse" message="tns:IDrSchedule_GetRoomByDivNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrVisitScheduleMtListByDrNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetDrVisitScheduleMtListByDrNo" message="tns:IDrSchedule_GetDrVisitScheduleMtListByDrNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetDrVisitScheduleMtListByDrNoResponse" message="tns:IDrSchedule_GetDrVisitScheduleMtListByDrNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegNumAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetRegNumAll" message="tns:IDrSchedule_GetRegNumAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetRegNumAllResponse" message="tns:IDrSchedule_GetRegNumAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpByDrCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetEmpByDrCode" message="tns:IDrSchedule_GetEmpByDrCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetEmpByDrCodeResponse" message="tns:IDrSchedule_GetEmpByDrCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpByDrNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetEmpByDrNo" message="tns:IDrSchedule_GetEmpByDrNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetEmpByDrNoResponse" message="tns:IDrSchedule_GetEmpByDrNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrVisitScheduleMtByScheduleId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetDrVisitScheduleMtByScheduleId" message="tns:IDrSchedule_GetDrVisitScheduleMtByScheduleId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetDrVisitScheduleMtByScheduleIdResponse" message="tns:IDrSchedule_GetDrVisitScheduleMtByScheduleId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrScheduleDtByScheduleId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetDrScheduleDtByScheduleId" message="tns:IDrSchedule_GetDrScheduleDtByScheduleId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetDrScheduleDtByScheduleIdResponse" message="tns:IDrSchedule_GetDrScheduleDtByScheduleId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDiviSionDrByEmpCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetDiviSionDrByEmpCode" message="tns:IDrSchedule_GetDiviSionDrByEmpCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetDiviSionDrByEmpCodeResponse" message="tns:IDrSchedule_GetDiviSionDrByEmpCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDivScheduleByDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetDivScheduleByDate" message="tns:IDrSchedule_GetDivScheduleByDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetDivScheduleByDateResponse" message="tns:IDrSchedule_GetDivScheduleByDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterScheduleByDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetMasterScheduleByDate" message="tns:IDrSchedule_GetMasterScheduleByDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetMasterScheduleByDateResponse" message="tns:IDrSchedule_GetMasterScheduleByDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsRoomUsing">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/IsRoomUsing" message="tns:IDrSchedule_IsRoomUsing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/IsRoomUsingResponse" message="tns:IDrSchedule_IsRoomUsing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitScheduleMt">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetVisitScheduleMt" message="tns:IDrSchedule_GetVisitScheduleMt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetVisitScheduleMtResponse" message="tns:IDrSchedule_GetVisitScheduleMt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrDtListByDrSchDtNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetDrDtListByDrSchDtNo" message="tns:IDrSchedule_GetDrDtListByDrSchDtNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetDrDtListByDrSchDtNoResponse" message="tns:IDrSchedule_GetDrDtListByDrSchDtNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitRescordList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetVisitRescordList" message="tns:IDrSchedule_GetVisitRescordList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetVisitRescordListResponse" message="tns:IDrSchedule_GetVisitRescordList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrScheduleDtByDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetDrScheduleDtByDate" message="tns:IDrSchedule_GetDrScheduleDtByDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetDrScheduleDtByDateResponse" message="tns:IDrSchedule_GetDrScheduleDtByDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertVisitRestRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/InsertVisitRestRecord" message="tns:IDrSchedule_InsertVisitRestRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/InsertVisitRestRecordResponse" message="tns:IDrSchedule_InsertVisitRestRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertVisitScheduleMt">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/InsertVisitScheduleMt" message="tns:IDrSchedule_InsertVisitScheduleMt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/InsertVisitScheduleMtResponse" message="tns:IDrSchedule_InsertVisitScheduleMt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdteVisitScheduleMt">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/UpdteVisitScheduleMt" message="tns:IDrSchedule_UpdteVisitScheduleMt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/UpdteVisitScheduleMtResponse" message="tns:IDrSchedule_UpdteVisitScheduleMt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVisitDrSchDt">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/UpdateVisitDrSchDt" message="tns:IDrSchedule_UpdateVisitDrSchDt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/UpdateVisitDrSchDtResponse" message="tns:IDrSchedule_UpdateVisitDrSchDt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVisitRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/UpdateVisitRecord" message="tns:IDrSchedule_UpdateVisitRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/UpdateVisitRecordResponse" message="tns:IDrSchedule_UpdateVisitRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DelVisitRestRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/DelVisitRestRecord" message="tns:IDrSchedule_DelVisitRestRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/DelVisitRestRecordResponse" message="tns:IDrSchedule_DelVisitRestRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDrSchDtFromVisitRest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/UpdateDrSchDtFromVisitRest" message="tns:IDrSchedule_UpdateDrSchDtFromVisitRest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/UpdateDrSchDtFromVisitRestResponse" message="tns:IDrSchedule_UpdateDrSchDtFromVisitRest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrVisitSchMtListByRoomNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetDrVisitSchMtListByRoomNo" message="tns:IDrSchedule_GetDrVisitSchMtListByRoomNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetDrVisitSchMtListByRoomNoResponse" message="tns:IDrSchedule_GetDrVisitSchMtListByRoomNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitLevelSetByLevelCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/GetVisitLevelSetByLevelCode" message="tns:IDrSchedule_GetVisitLevelSetByLevelCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/GetVisitLevelSetByLevelCodeResponse" message="tns:IDrSchedule_GetVisitLevelSetByLevelCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryDrScheduleDtByDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/QueryDrScheduleDtByDate" message="tns:IDrSchedule_QueryDrScheduleDtByDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/QueryDrScheduleDtByDateResponse" message="tns:IDrSchedule_QueryDrScheduleDtByDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryVisitRecordbyDrCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/QueryVisitRecordbyDrCode" message="tns:IDrSchedule_QueryVisitRecordbyDrCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/QueryVisitRecordbyDrCodeResponse" message="tns:IDrSchedule_QueryVisitRecordbyDrCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryProductbyItemCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/QueryProductbyItemCode" message="tns:IDrSchedule_QueryProductbyItemCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/QueryProductbyItemCodeResponse" message="tns:IDrSchedule_QueryProductbyItemCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryVisit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/QueryVisit" message="tns:IDrSchedule_QueryVisit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/QueryVisitResponse" message="tns:IDrSchedule_QueryVisit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDrSchMt">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDrSchedule/SetDrSchMt" message="tns:IDrSchedule_SetDrSchMt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDrSchedule/SetDrSchMtResponse" message="tns:IDrSchedule_SetDrSchMt_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DrSchedule" type="tns:IDrSchedule">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDivRegScheduleByVisitType">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetDivRegScheduleByVisitType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDivRegSchedule">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/AddDivRegSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDivRegSchedule">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/UpdateDivRegSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDivisionByDivCode">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetDivisionByDivCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDivsionByDivNo">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetDivsionByDivNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDivsionAll">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetDivsionAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrInfoListByDivNo">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetDrInfoListByDivNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoomByRoomNo">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetRoomByRoomNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoomByRoomCode">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetRoomByRoomCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoomAll">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetRoomAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoomByDivNo">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetRoomByDivNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrVisitScheduleMtListByDrNo">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetDrVisitScheduleMtListByDrNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegNumAll">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetRegNumAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpByDrCode">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetEmpByDrCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpByDrNo">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetEmpByDrNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrVisitScheduleMtByScheduleId">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetDrVisitScheduleMtByScheduleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrScheduleDtByScheduleId">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetDrScheduleDtByScheduleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDiviSionDrByEmpCode">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetDiviSionDrByEmpCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDivScheduleByDate">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetDivScheduleByDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterScheduleByDate">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetMasterScheduleByDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsRoomUsing">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/IsRoomUsing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitScheduleMt">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetVisitScheduleMt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrDtListByDrSchDtNo">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetDrDtListByDrSchDtNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitRescordList">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetVisitRescordList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrScheduleDtByDate">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetDrScheduleDtByDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertVisitRestRecord">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/InsertVisitRestRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertVisitScheduleMt">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/InsertVisitScheduleMt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdteVisitScheduleMt">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/UpdteVisitScheduleMt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVisitDrSchDt">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/UpdateVisitDrSchDt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVisitRecord">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/UpdateVisitRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelVisitRestRecord">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/DelVisitRestRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDrSchDtFromVisitRest">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/UpdateDrSchDtFromVisitRest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrVisitSchMtListByRoomNo">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetDrVisitSchMtListByRoomNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitLevelSetByLevelCode">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/GetVisitLevelSetByLevelCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryDrScheduleDtByDate">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/QueryDrScheduleDtByDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryVisitRecordbyDrCode">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/QueryVisitRecordbyDrCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryProductbyItemCode">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/QueryProductbyItemCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryVisit">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/QueryVisit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDrSchMt">
+      <soap:operation soapAction="http://tempuri.org/IDrSchedule/SetDrSchMt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DrSchedule">
+    <wsdl:port name="DrSchedule" binding="tns:DrSchedule">
+      <soap:address location="http://cn-20190104ylbs/SIHIS/DrSchedule/DrSchedule.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

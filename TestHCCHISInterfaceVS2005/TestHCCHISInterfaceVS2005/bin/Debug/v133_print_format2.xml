@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <DetailRowCont>10</DetailRowCont>
+
+  <FontDesc>
+    <Font Size="7" Name="宋体" FontIndex="0"/>
+    <Font Size="8" Name="宋体" FontIndex="1"/>
+    <Font Size="9" Name="宋体" FontIndex="2"/>
+    <Font Size="10" Name="宋体" FontIndex="3"/>
+    <Font Size="12" Name="宋体" FontIndex="4"/>
+  </FontDesc>
+
+  <OutTextDesc>
+    <OutText Name="Title" FontIndex="4" Top="80" Left="1260" Bold="1" DefaultValue="北京市医疗门诊费用清单"/>
+    <OutText Name="ExpenseAccountFlag1" FontIndex="1" Top="260" Left="650" Bold="1" Format ="1" ColumnWidth="2312"/>
+    <OutText Name="JsFlag" FontIndex="0" Top="270" Left="225" DefaultValue="实时结算：★"/>
+    <OutText Name="Jylsh" FontIndex="0" Top="335" Left="225" DefaultValue="交易流水号："/>
+    <OutText Name="No" FontIndex="1" Top="335" Left="595" />
+    <OutText Name="TradeType" FontIndex="0" Top="270" Left="600" />
+    <OutText Name="OriText" FontIndex="0" Top="335" Left="1400" />
+    <OutText Name="OriTradeNo" FontIndex="1" Top="335" Left="1900" />
+    <OutText Name="RealTimeFlag" FontIndex="1" Top="2622" Left="225" DefaultValue="收款单位(章):"/>
+    <OutText Name="RealTimeFlag1" FontIndex="1" Top="2622" Left="2050" DefaultValue="收款人:"/>
+    <OutText Name="RealTimeFlag2" FontIndex="1" Top="2622" Left="3350" DefaultValue="年    月    日"/>
+    <OutText Name="OrganizationTypeName" FontIndex="1" Top="405" Left="1950" />
+    <OutText Name="PayerName" FontIndex="1" Top="530" Left="450" />
+    <OutText Name="BusinessNo" FontIndex="1" Top="405" Left="600" />
+    <OutText Name="DateYear" FontIndex="1" Top="2622" Left="3210" />
+    <OutText Name="DateMonth" FontIndex="1" Top="2622" Left="3440"/>
+    <OutText Name="DateDay" FontIndex="1" Top="2622" Left="3640"/>
+    <OutText Name="Operator" FontIndex="1" Top="2622" Left="2350" />
+    <OutText Name="Sex" FontIndex="1" Top="530" Left="1250" />
+    <OutText Name="InsuranceTypeName" FontIndex="1" Top="530" Left="1850" />
+    <OutText Name="ICNo" FontIndex="1" Top="530" Left="3150" />
+    <OutText Name="InvoiceNo" FontIndex="1" Top="405" Left="3400"/>
+    <OutText Name="AmountCn" FontIndex="1" Top="2500" Left="755" ConvertNumFrom="AmountNum"/>
+    <OutText Name="AmountNum" FontIndex="1" Top="2500" Left="3480" />
+    <OutText Name="RowLimitTip" FontIndex="3" Top="1400" Left="225" />
+  </OutTextDesc>
+
+  <OutTableDesc>
+    
+    <!--表头行一-->
+    <OutTable Name="Title1" FontIndex="0" Left="220" Top="405" Align="2" LineDisp="0" Distance="4" Type="1" >
+      <ColumnWidths>
+        <ColumnWidth>1150</ColumnWidth>
+        <ColumnWidth>1800</ColumnWidth>
+        <ColumnWidth>1150</ColumnWidth>
+      </ColumnWidths>
+      <DefaultData>
+        <Data Value="业务流水号：|医疗机构类型：|NO."/>
+      </DefaultData>
+    </OutTable>
+
+    <!--表头行二-->
+    <OutTable Name="Title2" FontIndex="0" Left="220" Top="530" Align="2" LineDisp="0" Distance="4" Type="1" >
+      <ColumnWidths>
+        <ColumnWidth>780</ColumnWidth>
+        <ColumnWidth>320</ColumnWidth>
+        <ColumnWidth>1160</ColumnWidth>
+        <ColumnWidth>1160</ColumnWidth>
+      </ColumnWidths>
+      <DefaultData>
+        <Data Value="姓名：|性别：|医保类型：|社会保障卡号："/>
+      </DefaultData>
+    </OutTable>
+
+    <!--明细表头-->
+    <OutTable Name="DetailTitle" FontIndex="0" Left="220" Top="660" Align="2" LineDisp="0" Distance="4" Type="1" >
+      <ColumnWidths>
+        <ColumnWidth>780</ColumnWidth>
+        <ColumnWidth>230</ColumnWidth>
+        <ColumnWidth>260</ColumnWidth>
+        <ColumnWidth>230</ColumnWidth>
+        <ColumnWidth>210</ColumnWidth>
+        <ColumnWidth>780</ColumnWidth>
+        <ColumnWidth>220</ColumnWidth>
+        <ColumnWidth>270</ColumnWidth>
+        <ColumnWidth>230</ColumnWidth>
+        <ColumnWidth>210</ColumnWidth>
+      </ColumnWidths>
+      <DefaultData>
+        <Data Value="项目/规格|单价|数量/单位|金额|等级|项目/规格|单价|数量/单位|金额|等级"/>
+      </DefaultData>
+    </OutTable>
+
+    <!--左明细数据-->
+    <OutTable Name="v133_Detail1" FontIndex="1" Left="220" Top="760" LineDisp="0" Distance="4" Type="3">
+      <ColumnWidths>
+        <ColumnWidth>780</ColumnWidth>
+        <ColumnWidth>230</ColumnWidth>
+        <ColumnWidth>260</ColumnWidth>
+        <ColumnWidth>270</ColumnWidth>
+        <ColumnWidth>210</ColumnWidth>
+      </ColumnWidths>
+      <DataLocation RowTo="11" RowFrom="1">
+        <Name Col="1"/>
+        <Price Col="2"/>
+        <Quantity Col="3"/>
+        <Amount Col="4"/>
+        <FeeGrade Col="5"/>
+      </DataLocation>
+    </OutTable>
+
+    <!--右明细数据-->
+    <OutTable Name="v133_Detail2" FontIndex="1" Left="2170" Top="760" LineDisp="0" Distance="4" Type="3">
+      <ColumnWidths>
+        <ColumnWidth>780</ColumnWidth>
+        <ColumnWidth>230</ColumnWidth>
+        <ColumnWidth>260</ColumnWidth>
+        <ColumnWidth>270</ColumnWidth>
+        <ColumnWidth>210</ColumnWidth>
+      </ColumnWidths>
+      <DataLocation RowTo="11" RowFrom="1">
+        <Name Col="1"/>
+        <Price Col="2"/>
+        <Quantity Col="3"/>
+        <Amount Col="4"/>
+        <FeeGrade Col="5"/>
+      </DataLocation>
+    </OutTable>
+
+    <!--医保金额表头-->
+    <OutTable Name="AmountYBTitle" FontIndex="1" Left="220" Top="1900" Align="0" LineDisp="0" Distance="4" Type="1">
+      <ColumnWidths>
+        <ColumnWidth>800</ColumnWidth>
+        <ColumnWidth>295</ColumnWidth>
+        <ColumnWidth>800</ColumnWidth>
+        <ColumnWidth>395</ColumnWidth>
+        <ColumnWidth>800</ColumnWidth>
+        <ColumnWidth>355</ColumnWidth>
+        <!--<ColumnWidth>850</ColumnWidth>
+        <ColumnWidth>400</ColumnWidth>
+        <ColumnWidth>850</ColumnWidth>
+        <ColumnWidth>400</ColumnWidth>
+        <ColumnWidth>850</ColumnWidth>
+        <ColumnWidth>400</ColumnWidth>-->
+      </ColumnWidths>
+      <DefaultData>
+        <Data Value=" | | | |自付一：|"/>
+        <Data Value="门诊大额支付：| |本次医保范围内金额：| |起付金额：|"/>
+        <Data Value="退休补充支付：| |累计医保内范围金额：| |超封顶金额：|"/>
+        <Data Value="残军补助支付：| |年度门诊大额累计支付：| |自付二：|"/>
+        <Data Value="单位补充险[原公疗]支付：| |本次支付后个人账户余额：| |自费：|"/>
+        <Data Value="基金支付：| |个人账户支付：| |个人支付金额：|"/>
+      </DefaultData>
+    </OutTable>
+
+    <!--医保金额数据-->
+    <OutTable Name="AmountYB" FontIndex="1" Left="220" Top="1900" Align="4" LineDisp="0" Distance="4" Type="2">
+      <ColumnWidths>
+        <ColumnWidth>800</ColumnWidth>
+        <ColumnWidth>295</ColumnWidth>
+        <ColumnWidth>800</ColumnWidth>
+        <ColumnWidth>395</ColumnWidth>
+        <ColumnWidth>800</ColumnWidth>
+        <ColumnWidth>505</ColumnWidth>
+      </ColumnWidths>
+      <DataLocation RowCount="6" ZeroDisplay="0.00">
+        <Trade_SelfPay1 Row="1" Col="6"/>
+
+        <Trade_BigPay Row="2" Col="2"/>
+        <Trade_FeeIn Row="2" Col="4"/>
+        <Trade_FirstPay Row="2" Col="6"/>
+
+        <Trade_BCPay Row="3" Col="2"/>
+        <Treatment_FeeIn Row="3" Col="4"/>
+        <Trade_BeyondBig Row="3" Col="6"/>
+
+        <Trade_JCPay Row="4" Col="2"/>
+        <Treatment_BigPay Row="4" Col="4"/>
+        <Trade_SelfPay2 Row="4" Col="6"/>
+
+        <Trade_ServantPay Row="5" Col="2"/>
+        <Trade_PersonCountAfter Row="5" Col="4"/>
+        <Trade_FeeOut Row="5" Col="6"/>
+
+        <Trade_FundPay Row="6" Col="2"/>
+        <Trade_PersonCountPay Row="6" Col="4"/>
+        <Trade_CashPay Row="6" Col="6"/>
+      </DataLocation>
+    </OutTable>
+
+    <!--表尾-->
+    <OutTable Name="Bottom" FontIndex="0" Left="225" Top="2512" LineDisp="0" Distance="8" Type="1">
+      <!--Top=2512-->
+      <ColumnWidths>
+        <ColumnWidth>1635</ColumnWidth>
+        <ColumnWidth>1180</ColumnWidth>
+        <ColumnWidth>1310</ColumnWidth>
+      </ColumnWidths>
+      <DefaultData>
+        <Data Value="合计（大写）| |        ￥:"/>
+      </DefaultData>
+    </OutTable>
+  </OutTableDesc>
+
+  <OutLineDesc>
+    <!--横线-->
+    <OutLine x1="215" y1="500" x2="4095" y2="500"/>
+    <OutLine x1="215" y1="632" x2="4095" y2="632"/>
+    <OutLine x1="215" y1="764" x2="4095" y2="764"/>
+    <OutLine x1="215" y1="2477" x2="4095" y2="2477"/>
+    <OutLine x1="215" y1="2609" x2="4095" y2="2609"/>
+
+    <!--竖线-->
+    <OutLine x1="215" y1="500" x2="215" y2="2609"/>
+    <OutLine x1="4095" y1="500" x2="4095" y2="2609"/>
+    <OutLine x1="2130" y1="800" x2="2130" y2="1950" Mode="2"/>
+    <!--分割竖线长-->
+    <OutLine x1="2130" y1="640" x2="2130" y2="760" />
+    <!--分割竖线2-->
+    <OutLine x1="3340" y1="2477" x2="3340" y2="2609"/>
+    <!--x1=3115-->
+  </OutLineDesc>
+</root>

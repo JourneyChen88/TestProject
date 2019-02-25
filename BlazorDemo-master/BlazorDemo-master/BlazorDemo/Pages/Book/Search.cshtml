@@ -1,0 +1,34 @@
+﻿@page "/book/search"
+@using BlazorDemo.Model.DataModel
+@inject HttpClient client
+@using Microsoft.JSInterop;
+
+<div>
+    <input id="SearchTitle" />
+    <p>Type for selection of book.</p>
+</div>
+<hr />
+@if (Book != null)
+{
+    <div class="well well-lg">
+        <h6>Title: <b>@Book.BookTitle</b></h6>
+        <h6>ISBN: <b>@Book.ISBN</b></h6>
+        <h6>Publisher: <b>@Book.PublisherName</b></h6>
+    </div>
+}
+
+@functions{
+    Book Book = null;
+
+    [JSInvokable]
+    public async Task SetBookId(int bookId)
+    {
+        Book = await client.GetJsonAsync<Book>($"api/book/{bookId}");
+        StateHasChanged();
+    }
+    protected override async Task OnAfterRenderAsync()
+    {
+        await JSRuntime.Current.InvokeAsync<string>(
+            "searchBook.Init", "#SearchTitle", new DotNetObjectRef(this));
+    }
+}

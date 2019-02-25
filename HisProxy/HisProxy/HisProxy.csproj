@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{57DF8624-7B09-46CD-885A-18874F88520B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HisProxy</RootNamespace>
+    <AssemblyName>HisProxy</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="scdt.cs" />
+    <Compile Include="Service References\DrSchedule\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Medicare\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Pay\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\VisitRegister\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\System.Data.DataSet1.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\DrSchedule\DrSchedule1.wsdl" />
+    <None Include="Service References\DrSchedule\DrSchedule5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DrSchedule\DrSchedule51.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DrSchedule\DrSchedule52.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DrSchedule\DrSchedule53.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DrSchedule\DrSchedule54.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DrSchedule\HisProxy.DrSchedule.DivisionDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DrSchedule\HisProxy.DrSchedule.DivisionOutOut.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DrSchedule\HisProxy.DrSchedule.DivRegScheduleDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DrSchedule\HisProxy.DrSchedule.DoctorOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DrSchedule\HisProxy.DrSchedule.DrSheduleOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DrSchedule\HisProxy.DrSchedule.EmployeeOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DrSchedule\HisProxy.DrSchedule.RegisterNumber.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DrSchedule\HisProxy.DrSchedule.RoomOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DrSchedule\HisProxy.DrSchedule.ScheduleOutPut1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DrSchedule\HisProxy.DrSchedule.VisitLevelSetDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DrSchedule\HisProxy.DrSchedule.VisitRescordOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DrSchedule\HisProxy.DrSchedule.VisitScheduleDt.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DrSchedule\HisProxy.DrSchedule.VisitScheduleMtDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DrSchedule\HisProxy.DrSchedule.VisitScheduleOutPut.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Medicare\HisProxy.Medicare.CardTypeChargeContrast.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Medicare\HisProxy.Medicare.MedicareDealTypeSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Medicare\HisProxy.Medicare.MedicareInterfaceSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Medicare\Medicare.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Medicare\Medicare1.wsdl" />
+    <None Include="Service References\Medicare\Medicare3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Medicare\Medicare31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Medicare\Medicare32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Pay\HisProxy.Pay.AppendChargeResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Pay\HisProxy.Pay.ChargeRecordOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Pay\HisProxy.Pay.MedCodeSetDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Pay\HisProxy.Pay.OpdEmgPrescriptionOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Pay\HisProxy.Pay.PackageDetailDto1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Pay\HisProxy.Pay.PackageDto1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Pay\HisProxy.Pay.PatPrescriptionOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Pay\HisProxy.Pay.PayMethodOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Pay\Pay1.wsdl" />
+    <None Include="Service References\Pay\Pay7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Pay\Pay71.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Pay\Pay72.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Pay\Pay73.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Pay\Pay74.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Pay\Pay75.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Pay\Pay76.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.AddPatientOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.AddRegOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.AreaNoOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.CancelRegOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.CardType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.ChargeTypeOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.DiscountOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.DoctorInfoOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.EmergencyOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.InvoiceControlDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.OpdRoomSetOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.OutPatientOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.PartTypeOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.PatientInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.PatientOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.PatientPreorder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.PublicCodeOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.RegisterInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.RoomVisitScheduleOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.VisitLevelOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\HisProxy.VisitRegister.VisitRecordOutput.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisitRegister\VisitRegister.wsdl" />
+    <None Include="Service References\VisitRegister\VisitRegister.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VisitRegister\VisitRegister1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VisitRegister\VisitRegister2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VisitRegister\VisitRegister3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VisitRegister\VisitRegister4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VisitRegister\VisitRegister5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VisitRegister\VisitRegister6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VisitRegister\VisitRegister7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VisitRegister\VisitRegister8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\DrSchedule\" />
+    <WCFMetadataStorage Include="Service References\Medicare\" />
+    <WCFMetadataStorage Include="Service References\Pay\" />
+    <WCFMetadataStorage Include="Service References\VisitRegister\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DrSchedule\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DrSchedule\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DrSchedule\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Pay\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Pay\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Pay\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Medicare\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Medicare\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Medicare\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DrSchedule\DrSchedule1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Pay\Pay1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\VisitRegister\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\VisitRegister\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\VisitRegister\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

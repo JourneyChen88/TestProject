@@ -1,0 +1,13 @@
+﻿@page
+@model UserModel
+@{
+    ViewData["Title"] = "用户";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@Model.Message</h3>
+<ul>
+    @for (int i = 0; i < 10; i++)
+    {
+        <li>@i</li>
+    }
+</ul>

@@ -1,0 +1,15 @@
+E:\GitHubCode\BlazorDemo\WebApplication1.Client\obj\Debug\netstandard2.0\blazor\linker\Microsoft.AspNetCore.Blazor.Browser.dll
+E:\GitHubCode\BlazorDemo\WebApplication1.Client\obj\Debug\netstandard2.0\blazor\linker\Microsoft.AspNetCore.Blazor.dll
+E:\GitHubCode\BlazorDemo\WebApplication1.Client\obj\Debug\netstandard2.0\blazor\linker\Microsoft.AspNetCore.Blazor.TagHelperWorkaround.dll
+E:\GitHubCode\BlazorDemo\WebApplication1.Client\obj\Debug\netstandard2.0\blazor\linker\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\GitHubCode\BlazorDemo\WebApplication1.Client\obj\Debug\netstandard2.0\blazor\linker\Microsoft.Extensions.DependencyInjection.dll
+E:\GitHubCode\BlazorDemo\WebApplication1.Client\obj\Debug\netstandard2.0\blazor\linker\Microsoft.JSInterop.dll
+E:\GitHubCode\BlazorDemo\WebApplication1.Client\obj\Debug\netstandard2.0\blazor\linker\Mono.WebAssembly.Interop.dll
+E:\GitHubCode\BlazorDemo\WebApplication1.Client\obj\Debug\netstandard2.0\blazor\linker\mscorlib.dll
+E:\GitHubCode\BlazorDemo\WebApplication1.Client\obj\Debug\netstandard2.0\blazor\linker\System.Core.dll
+E:\GitHubCode\BlazorDemo\WebApplication1.Client\obj\Debug\netstandard2.0\blazor\linker\System.dll
+E:\GitHubCode\BlazorDemo\WebApplication1.Client\obj\Debug\netstandard2.0\blazor\linker\System.Net.Http.dll
+E:\GitHubCode\BlazorDemo\WebApplication1.Client\obj\Debug\netstandard2.0\blazor\linker\WebApplication1.Client.dll
+E:\GitHubCode\BlazorDemo\WebApplication1.Client\obj\Debug\netstandard2.0\blazor\linker\WebApplication1.Shared.dll
+E:\GitHubCode\BlazorDemo\WebApplication1.Client\obj\Debug\netstandard2.0\blazor\linker\WebApplication1.Client.pdb
+E:\GitHubCode\BlazorDemo\WebApplication1.Client\obj\Debug\netstandard2.0\blazor\linker\WebApplication1.Shared.pdb

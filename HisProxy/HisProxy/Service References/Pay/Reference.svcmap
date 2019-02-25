@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="09e50d3c-4300-4b0c-a816-8c561d7f1917" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/SIHIS/Pay/Pay.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Pay7.xsd" MetadataType="Schema" ID="ebd3eaaf-4fb4-440d-bec8-0a21a616aafa" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc?xsd=xsd5" />
+    <MetadataFile FileName="Pay1.disco" MetadataType="Disco" ID="8ef5882b-1276-4439-ad70-79e963755a90" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc?disco" />
+    <MetadataFile FileName="Pay71.xsd" MetadataType="Schema" ID="36ef1cce-fe41-4768-94e9-582ec6fa49f0" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc?xsd=xsd4" />
+    <MetadataFile FileName="Pay1.wsdl" MetadataType="Wsdl" ID="b17b8659-f452-4011-89ca-474aa4bc42bd" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc?wsdl" />
+    <MetadataFile FileName="Pay72.xsd" MetadataType="Schema" ID="cc6f82a2-9011-442b-88d4-ac1bd0131045" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc?xsd=xsd6" />
+    <MetadataFile FileName="Pay73.xsd" MetadataType="Schema" ID="aca130fd-0bb6-4f98-931d-ca41c4169721" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc?xsd=xsd1" />
+    <MetadataFile FileName="Pay74.xsd" MetadataType="Schema" ID="b4508065-f80d-43e0-a48c-bb7dbe699a5e" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc?xsd=xsd0" />
+    <MetadataFile FileName="Pay75.xsd" MetadataType="Schema" ID="1bd81746-ca87-4499-958d-6b851de39ec7" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc?xsd=xsd3" />
+    <MetadataFile FileName="Pay76.xsd" MetadataType="Schema" ID="1d19eb82-b7b4-4279-83fe-719de40db6bf" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/Pay/Pay.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

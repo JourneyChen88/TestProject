@@ -1,0 +1,7 @@
+bin
+obj
+TestResults
+*~
+*.swp
+*.suo
+/Faker.Net.sln.DotSettings.user

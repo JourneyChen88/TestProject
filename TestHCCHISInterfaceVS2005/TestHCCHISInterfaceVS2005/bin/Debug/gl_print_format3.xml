@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <FontDesc>
+    <Font FontIndex="0" Name="宋体" Size="7" />
+    <Font FontIndex="1" Name="宋体" Size="8" />
+    <Font FontIndex="2" Name="宋体" Size="9" />
+    <Font FontIndex="3" Name="宋体" Size="10" />
+    <Font FontIndex="4" Name="宋体" Size="12" />
+  </FontDesc>
+
+  <OutTextDesc>
+    <OutText Name="RealTimeFlag" FontIndex="1" Top="20" Left="10" DefaultValue="实时结算：★"/>
+    <OutText Name="PayerName" FontIndex="3" Top="110" Left="410" />
+    <OutText Name="AmountCn" FontIndex="3" Top="1060" Left="530" ConvertNumFrom="AmountNum"/>
+    <OutText Name="AmountNum" FontIndex="3" Top="1060" Left="3300" />
+    <OutText Name="Operator" FontIndex="3" Top="1180" Left="500" />
+    <OutText Name="No" FontIndex="3" Top="1180" Left="1560" />
+    <OutText Name="Date" FontIndex="3" Top="1180" Left="3230" />
+    <OutText Name="ExpenseAccountFlag1" FontIndex="3" Top="110" Left="1650" Bold="1" />
+    <OutText Name="ExpenseAccountFlag2" FontIndex="3" Top="2750" Left="3150" Bold="1" />
+
+    <OutText Name="PLACode1" FontIndex="1" Top="-30" Left="350"/>
+    <OutText Name="PLACode2" FontIndex="1" Top="40" Left="350"/>
+
+    <OutText Name="MedicalServiceFee" FontIndex="1" Top="930" Left="2200" DefaultValue="医事服务费"/>
+    <OutText Name="EmergencySurcharge" FontIndex="1" Top="930" Left="3270" DefaultValue="急诊加收"/>
+
+  </OutTextDesc>
+
+  <OutTableDesc>
+
+    <OutTable Type="1" Name="AmountYBTitle1" FontIndex="1" Top="1335" Left="0" Distance="4" LineDisp="0" Align="2">
+      <ColumnWidths>
+        <ColumnWidth>865</ColumnWidth>
+        <ColumnWidth>1165</ColumnWidth>
+        <ColumnWidth>865</ColumnWidth>
+        <ColumnWidth>1165</ColumnWidth>
+      </ColumnWidths>
+      <DefaultData>
+        <Data Value="公费医疗范围内金额（元）||个人负担金额（元）|"/>
+      </DefaultData>
+    </OutTable>
+
+    <OutTable Type="2" Name="Amount" FontIndex="3" Top="390" Left="0" Distance="6" LineDisp="0" Align="4">
+      <ColumnWidths>
+        <ColumnWidth>390</ColumnWidth>
+        <ColumnWidth>570</ColumnWidth>
+        <ColumnWidth>390</ColumnWidth>
+        <ColumnWidth>570</ColumnWidth>
+        <ColumnWidth>390</ColumnWidth>
+        <ColumnWidth>570</ColumnWidth>
+        <ColumnWidth>390</ColumnWidth>
+        <ColumnWidth>570</ColumnWidth>
+      </ColumnWidths>
+      <DataLocation RowCount="5">
+        <Medicine Row="1" Col="2"/>
+        <TMedicine Row="1" Col="4"/>
+        <THerb Row="1" Col="6"/>
+        <LabExam Row="1" Col="8"/>
+
+        <Xray Row="2" Col="2"/>
+        <Ultrasonic Row="2" Col="4"/>
+        <CT Row="2" Col="6"/>
+        <MRI Row="2" Col="8"/>
+
+        <Examine Row="3" Col="2"/>
+        <Treatment Row="3" Col="4"/>
+        <Material Row="3" Col="6"/>
+        <Operation Row="3" Col="8"/>
+
+        <Oxygen Row="4" Col="2"/>
+        <BloodT Row="4" Col="4"/>
+        <Orthodontics Row="4" Col="6"/>
+        <Prosthesis Row="4" Col="8"/>
+
+        <ForensicExpertise Row="5" Col="2"/>
+        <Other Row="5" Col="4"/>
+        <MedicalService Row="5" Col="6"/>
+        <EmergencySurcharge Row="5" Col="8"/>
+
+      </DataLocation>
+    </OutTable>
+
+    <OutTable Type="2" Name="AmountYB" FontIndex="3" Top="1330" Left="0" Distance="4" LineDisp="0" BoldCell="1,5" Align="1">
+      <ColumnWidths>
+        <ColumnWidth>865</ColumnWidth>
+        <ColumnWidth>365</ColumnWidth>
+        <ColumnWidth>800</ColumnWidth>
+        <ColumnWidth>865</ColumnWidth>
+        <ColumnWidth>365</ColumnWidth>
+      </ColumnWidths>
+      <DataLocation RowCount="1" ZeroDisplay="0">
+        <Trade_FundPay Row="1" Col="2"/>
+        <Trade_SelfFee Row="1" Col="5"/>
+      </DataLocation>
+    </OutTable>
+
+    <OutTable Type="3" Name="Detail" FontIndex="1" Top="1600" Left="0" Distance="4" LineDisp="0">
+      <ColumnWidths>
+        <ColumnWidth>1800</ColumnWidth>
+        <ColumnWidth>400</ColumnWidth>
+        <ColumnWidth>225</ColumnWidth>
+        <ColumnWidth>400</ColumnWidth>
+        <ColumnWidth>225</ColumnWidth>
+        <ColumnWidth>400</ColumnWidth>
+        <ColumnWidth>400</ColumnWidth>
+      </ColumnWidths>
+      <DataLocation RowFrom="1" RowTo="5">
+        <Name Col="1"/>
+        <Standards Col="2"/>
+        <Unit Col="3"/>
+        <Price Col="4" FormatRight="1"/>
+        <Quantity Col="5" FormatRight="1"/>
+        <Amount Col="6" FormatRight="1"/>
+        <FeeGrade Col="7"/>
+      </DataLocation>
+    </OutTable>
+
+    <OutTable Type="1" Name="DetailTitle" FontIndex="1" Top="1500" Left="0" Distance="4" LineDisp="0" Align="1" HideByDetailCount="1">
+      <ColumnWidths>
+        <ColumnWidth>1800</ColumnWidth>
+        <ColumnWidth>400</ColumnWidth>
+        <ColumnWidth>225</ColumnWidth>
+        <ColumnWidth>400</ColumnWidth>
+        <ColumnWidth>225</ColumnWidth>
+        <ColumnWidth>400</ColumnWidth>
+        <ColumnWidth>400</ColumnWidth>
+      </ColumnWidths>
+      <DefaultData>
+        <Data Value="项目名称|规格|单位|单价|数量|金额|收费等级"/>
+      </DefaultData>
+    </OutTable>
+
+  </OutTableDesc>
+
+  <OutLineDesc>
+  </OutLineDesc>
+
+</root>

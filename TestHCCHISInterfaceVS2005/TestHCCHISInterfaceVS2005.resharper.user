@@ -1,0 +1,90 @@
+<Configuration>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="AppendText" priority="0" />
+      <Item value="ScrollToCaret" priority="0" />
+      <Item value="SelectionStart" priority="0" />
+      <Item value="Text" priority="0" />
+      <Item value="Clear" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:string">
+      <Item value="Length" priority="0" />
+      <Item value="Equals" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime.Now">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System">
+      <Item value="Xml" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Xml">
+      <Item value="XmlDocument" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlDocument">
+      <Item value="LoadXml" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlNode">
+      <Item value="SelectNodes" priority="0" />
+      <Item value="Attributes" priority="0" />
+      <Item value="InnerText" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlAttribute">
+      <Item value="InnerText" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlNodeList">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlAttributeCollection">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MedicareComLib.OutpatientClass">
+      <Item value="Divide" priority="0" />
+      <Item value="RePrintInvoice" priority="0" />
+      <Item value="RefundmentDivide" priority="0" />
+      <Item value="MedicareQuery" priority="0" />
+      <Item value="CommitTradeState" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <EditorManager>
+    <RecentFiles>
+      <File id="10F74C3A-5BF0-427C-9F7D-531E358CD87F/f:Program.cs" caret="396" scrollPosition="0|0" />
+      <File id="10F74C3A-5BF0-427C-9F7D-531E358CD87F/f:MainForm.cs" caret="12389" scrollPosition="66|451" />
+    </RecentFiles>
+  </EditorManager>
+  <FileStructureView>
+    <AutoScrollToSource>False</AutoScrollToSource>
+    <TrackCaretLocation>False</TrackCaretLocation>
+  </FileStructureView>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <ReFormatCode>
+    <ReorderMembers>False</ReorderMembers>
+    <OptimizeUsings>True</OptimizeUsings>
+    <RemoveRedundantThis>True</RemoveRedundantThis>
+    <ShortenReferences>True</ShortenReferences>
+  </ReFormatCode>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <SharedSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </SharedSolutionDisabledTemplatesManager>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <Providers />
+  </UnitTestRunner>
+  <UserSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </UserSolutionDisabledTemplatesManager>
+</Configuration>

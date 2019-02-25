@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HisService.DrSchedule" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfDivRegScheduleDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DivRegScheduleDto" nillable="true" type="tns:DivRegScheduleDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDivRegScheduleDto" nillable="true" type="tns:ArrayOfDivRegScheduleDto" />
+  <xs:complexType name="DivRegScheduleDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AutoMachineQty" type="xs:int" />
+      <xs:element minOccurs="0" name="DayOfWeek" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:long" />
+      <xs:element minOccurs="0" name="RegType" type="xs:int" />
+      <xs:element minOccurs="0" name="SumQty" type="xs:int" />
+      <xs:element minOccurs="0" name="TelQty" type="xs:int" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdateUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisitSction" type="xs:int" />
+      <xs:element minOccurs="0" name="VisitType" type="xs:int" />
+      <xs:element minOccurs="0" name="WebQty" type="xs:int" />
+      <xs:element minOccurs="0" name="WindowQty" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DivRegScheduleDto" nillable="true" type="tns:DivRegScheduleDto" />
+  <xs:complexType name="ArrayOfDivisionDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DivisionDto" nillable="true" type="tns:DivisionDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDivisionDto" nillable="true" type="tns:ArrayOfDivisionDto" />
+  <xs:complexType name="DivisionDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DeptNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivEngName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmgUseType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InpUseType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsConsultation" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsEmergency" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsIss" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="IsVirtual" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Keyword1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Keyword2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Keyword3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MedDivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OpdDrugDays" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="OpdUseType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="UpdateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdateUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DivisionDto" nillable="true" type="tns:DivisionDto" />
+  <xs:complexType name="ArrayOfDivisionOutOut">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DivisionOutOut" nillable="true" type="tns:DivisionOutOut" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDivisionOutOut" nillable="true" type="tns:ArrayOfDivisionOutOut" />
+  <xs:complexType name="DivisionOutOut">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DeptNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivEngName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmgUseType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InpUseType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsConsultation" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVirtual" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Keyword1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MedDivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OpdDrugDays" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="OpdUseType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DivisionOutOut" nillable="true" type="tns:DivisionOutOut" />
+  <xs:complexType name="ArrayOfDoctorOutput">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DoctorOutput" nillable="true" type="tns:DoctorOutput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDoctorOutput" nillable="true" type="tns:ArrayOfDoctorOutput" />
+  <xs:complexType name="DoctorOutput">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DivCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmpCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmpName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmpNo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DoctorOutput" nillable="true" type="tns:DoctorOutput" />
+  <xs:complexType name="ArrayOfRoomOutput">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RoomOutput" nillable="true" type="tns:RoomOutput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRoomOutput" nillable="true" type="tns:ArrayOfRoomOutput" />
+  <xs:complexType name="RoomOutput">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoomCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoomName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoomNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RoomOutput" nillable="true" type="tns:RoomOutput" />
+  <xs:complexType name="ArrayOfVisitScheduleOutPut">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VisitScheduleOutPut" nillable="true" type="tns:VisitScheduleOutPut" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVisitScheduleOutPut" nillable="true" type="tns:ArrayOfVisitScheduleOutPut" />
+  <xs:complexType name="VisitScheduleOutPut">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:VisitScheduleMtDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DivCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DivName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmpCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmpName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoomCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoomName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="VisitScheduleOutPut" nillable="true" type="tns:VisitScheduleOutPut" />
+  <xs:complexType name="VisitScheduleMtDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AvgVisitTime" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ChargeType" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CheckInTime" type="xs:int" />
+      <xs:element minOccurs="0" name="Cycles" type="xs:int" />
+      <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DrNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IsCacncel" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsHolidaysRest" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsSendChart" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MaxSeqNo" type="xs:int" />
+      <xs:element minOccurs="0" name="MedicalFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NumberType" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PreWeeks" type="xs:int" />
+      <xs:element minOccurs="0" name="RealDrNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RegPermit" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="RoomNo" type="xs:int" />
+      <xs:element minOccurs="0" name="ScheduleNo" type="xs:long" />
+      <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Status" type="xs:int" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdateUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisitLevel" type="xs:int" />
+      <xs:element minOccurs="0" name="VisitSction" type="xs:int" />
+      <xs:element minOccurs="0" name="VisitWeekDay" type="xs:int" />
+      <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VisitScheduleMtDto" nillable="true" type="tns:VisitScheduleMtDto" />
+  <xs:complexType name="ArrayOfEmployeeOutput">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmployeeOutput" nillable="true" type="tns:EmployeeOutput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmployeeOutput" nillable="true" type="tns:ArrayOfEmployeeOutput" />
+  <xs:complexType name="EmployeeOutput">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DivCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmpCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmpName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmpNo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeeOutput" nillable="true" type="tns:EmployeeOutput" />
+  <xs:complexType name="ArrayOfScheduleOutPut">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ScheduleOutPut" nillable="true" type="tns:ScheduleOutPut" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfScheduleOutPut" nillable="true" type="tns:ArrayOfScheduleOutPut" />
+  <xs:complexType name="ScheduleOutPut">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DivName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DrName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DrNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaxSeqNo" type="xs:int" />
+      <xs:element minOccurs="0" name="MedicalFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RegFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RegType" type="xs:int" />
+      <xs:element minOccurs="0" name="VisitDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="VisitSction" type="xs:int" />
+      <xs:element minOccurs="0" name="VisitType" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScheduleOutPut" nillable="true" type="tns:ScheduleOutPut" />
+  <xs:complexType name="GetVisitScheduleInput">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoomNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisitSction" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisitWeekDay" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetVisitScheduleInput" nillable="true" type="tns:GetVisitScheduleInput" />
+  <xs:complexType name="VisitSheduleInput">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DrNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RoomNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="VisitSction" type="xs:int" />
+      <xs:element minOccurs="0" name="VisitWeekDay" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VisitSheduleInput" nillable="true" type="tns:VisitSheduleInput" />
+  <xs:complexType name="ArrayOfDrSheduleOutput">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DrSheduleOutput" nillable="true" type="tns:DrSheduleOutput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDrSheduleOutput" nillable="true" type="tns:ArrayOfDrSheduleOutput" />
+  <xs:complexType name="DrSheduleOutput">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DrCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DrName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DrNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DtVisitMark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaxSeqNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NewDrCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NewDrName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NewDrNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumberMark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoomCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoomNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ScheduleNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisitDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisitMark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisitSction" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisitWeekDay" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DrSheduleOutput" nillable="true" type="tns:DrSheduleOutput" />
+  <xs:complexType name="ArrayOfVisitRescordOutput">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VisitRescordOutput" nillable="true" type="tns:VisitRescordOutput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVisitRescordOutput" nillable="true" type="tns:ArrayOfVisitRescordOutput" />
+  <xs:complexType name="VisitRescordOutput">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DivName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DrNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmpName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NewDrNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NewEmpName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoomCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoomNo" type="xs:int" />
+      <xs:element minOccurs="0" name="ScheduleNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="VisitMark" type="xs:int" />
+      <xs:element minOccurs="0" name="VisitSction" type="xs:int" />
+      <xs:element minOccurs="0" name="VisitWeekDay" type="xs:int" />
+      <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VisitRescordOutput" nillable="true" type="tns:VisitRescordOutput" />
+  <xs:complexType name="VisitRestRecordDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NewDrNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ScheduleNo" type="xs:long" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdateUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisitMark" type="xs:unsignedByte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VisitRestRecordDto" nillable="true" type="tns:VisitRestRecordDto" />
+  <xs:complexType name="DelVisitRestRecordInput">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ScheduleNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DelVisitRestRecordInput" nillable="true" type="tns:DelVisitRestRecordInput" />
+  <xs:complexType name="UpdateDrSchDtInput">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrDrNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ScheduleNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdateUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisitMark" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UpdateDrSchDtInput" nillable="true" type="tns:UpdateDrSchDtInput" />
+  <xs:complexType name="ArrayOfVisitLevelSetDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VisitLevelSetDto" nillable="true" type="tns:VisitLevelSetDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVisitLevelSetDto" nillable="true" type="tns:ArrayOfVisitLevelSetDto" />
+  <xs:complexType name="VisitLevelSetDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ItemCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LevelCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LevelName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdateUser" type="xs:short" />
+      <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VisitLevelSetDto" nillable="true" type="tns:VisitLevelSetDto" />
+</xs:schema>

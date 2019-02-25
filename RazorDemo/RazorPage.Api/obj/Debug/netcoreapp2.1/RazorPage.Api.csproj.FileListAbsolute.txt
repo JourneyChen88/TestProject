@@ -1,0 +1,13 @@
+E:\GitHubCode\RazorDemo\RazorPage.Api\bin\Debug\netcoreapp2.1\RazorPage.Api.deps.json
+E:\GitHubCode\RazorDemo\RazorPage.Api\bin\Debug\netcoreapp2.1\RazorPage.Api.runtimeconfig.json
+E:\GitHubCode\RazorDemo\RazorPage.Api\bin\Debug\netcoreapp2.1\RazorPage.Api.runtimeconfig.dev.json
+E:\GitHubCode\RazorDemo\RazorPage.Api\bin\Debug\netcoreapp2.1\RazorPage.Api.dll
+E:\GitHubCode\RazorDemo\RazorPage.Api\bin\Debug\netcoreapp2.1\RazorPage.Api.pdb
+E:\GitHubCode\RazorDemo\RazorPage.Api\obj\Debug\netcoreapp2.1\RazorPage.Api.csproj.CoreCompileInputs.cache
+E:\GitHubCode\RazorDemo\RazorPage.Api\obj\Debug\netcoreapp2.1\RazorPage.Api.RazorAssemblyInfo.cache
+E:\GitHubCode\RazorDemo\RazorPage.Api\obj\Debug\netcoreapp2.1\RazorPage.Api.RazorAssemblyInfo.cs
+E:\GitHubCode\RazorDemo\RazorPage.Api\obj\Debug\netcoreapp2.1\RazorPage.Api.AssemblyInfoInputs.cache
+E:\GitHubCode\RazorDemo\RazorPage.Api\obj\Debug\netcoreapp2.1\RazorPage.Api.AssemblyInfo.cs
+E:\GitHubCode\RazorDemo\RazorPage.Api\obj\Debug\netcoreapp2.1\RazorPage.Api.RazorTargetAssemblyInfo.cache
+E:\GitHubCode\RazorDemo\RazorPage.Api\obj\Debug\netcoreapp2.1\RazorPage.Api.dll
+E:\GitHubCode\RazorDemo\RazorPage.Api\obj\Debug\netcoreapp2.1\RazorPage.Api.pdb

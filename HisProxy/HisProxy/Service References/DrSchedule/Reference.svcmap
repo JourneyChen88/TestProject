@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0a75976c-bb77-457c-b128-0a97b80605ff" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/SIHIS/DrSchedule/DrSchedule.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DrSchedule5.xsd" MetadataType="Schema" ID="bbc86867-82e6-4b87-84e3-e9fdaaf5876f" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/DrSchedule/DrSchedule.svc?xsd=xsd0" />
+    <MetadataFile FileName="DrSchedule51.xsd" MetadataType="Schema" ID="65121a63-ee80-49fb-b7d2-2f793ce10023" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/DrSchedule/DrSchedule.svc?xsd=xsd4" />
+    <MetadataFile FileName="DrSchedule52.xsd" MetadataType="Schema" ID="998f4ea4-bbf8-4fe4-8bba-d601c89216a7" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/DrSchedule/DrSchedule.svc?xsd=xsd1" />
+    <MetadataFile FileName="DrSchedule1.wsdl" MetadataType="Wsdl" ID="cf5dfb45-3f50-4738-82f1-2f11c76d2e26" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/DrSchedule/DrSchedule.svc?wsdl" />
+    <MetadataFile FileName="DrSchedule53.xsd" MetadataType="Schema" ID="6ff843bd-f50b-4d5e-b048-e49184092dd3" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/DrSchedule/DrSchedule.svc?xsd=xsd2" />
+    <MetadataFile FileName="DrSchedule54.xsd" MetadataType="Schema" ID="8c8ad25c-2d3f-488d-b1ce-bf59e08e7b36" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/DrSchedule/DrSchedule.svc?xsd=xsd3" />
+    <MetadataFile FileName="DrSchedule1.disco" MetadataType="Disco" ID="b01a9b28-a8d5-4e7b-8e71-d957613f2f96" SourceId="1" SourceUrl="http://cn-20190104ylbs/SIHIS/DrSchedule/DrSchedule.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
