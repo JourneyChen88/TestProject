@@ -1,0 +1,29 @@
+http://192.168.1.204/ --代码服务器
+192.168.1.209 发布程序服务器
+https://www.liaoxuefeng.com/wiki
+gitlab chunmeng.chen@mail.haoyisheng.com HYS123456
+Exec sp_rename 'Test1.chvComType' ,'testChv'
+Setup.exe /QUIET /ACTION=REBUILDDATABASE /instancename=MSSQLSERVER /SQLSYSADMINACCOUNTS=administrator /sapwd=HYS123456 /sqlcollation=Chinese_PRC_BIN
+HisProxy.RationalDrug
+JourneyChen88
+wdd1550666
+delphi  挂号   admin  密码 fybjy
+
+10001649   362531198601090315
+36102901475005
+D:\EMR\EMR\src\SI_EMR\Client.OutPatientCare
+git clone -b develop_new http://192.168.1.204/Desktop/EMR.git
+
+git pull origin develop_new
+ 
+git push origin develop_new:develop_new
+ 
+git fetch origin develop_new
+ 
+//方法一
+git fetch origin develop_new //从远程的origin仓库的develop_new分支下载代码到本地的origin develop_new
+
+git log -p develop_new.. origin/develop_new  //比较本地的仓库和远程参考的区别
+
+git merge origin/develop_new   //把远程下载下来的代码合并到本地仓库，远程的和本地的合并
+6225758389534750
